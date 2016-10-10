@@ -1,6 +1,50 @@
+html, body {
+    font-family: 'Acrobat Semibold', sans-serif;
+}
+
+@font-face {
+    font-family: 'Acrobat Semibold';
+    src: url('/assets/fonts/Akrobatsemibold.woff');
+}
+
+// @font-face {
+//     font-family: 'Lato-Bold';
+//     src: url('/assets/fonts/latobold.ttf') format('truetype');
+// }
+
+// @font-face {
+//     font-family: 'Museo-Cyrl';
+//     src: url('/assets/fonts/Museocyrl500.ttf') format('truetype');
+// }
+
+// @font-face {
+//     font-family: 'Nautilus-Pompilius';
+//     src: url('/assets/fonts/nautiluspompilius.ttf') format('truetype');
+// }
+
+
 /* ------------------------------------
     Header Styles
 ------------------------------------- */
-h1 {
-    color: deepskyblue;
+
+.header {
+    background-color: #1d1d1d;
+    min-height: 150px;
+}
+
+.logo {
+    padding: 20px  0;
+    display: block;
+}
+
+.navbar-default {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 18px;
 }
