@@ -1,27 +1,213 @@
-html, body {
-  font-family: 'Acrobat Semibold', sans-serif; }
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
 
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
 @font-face {
   font-family: 'Acrobat Semibold';
   src: url("/assets/fonts/Akrobatsemibold.woff"); }
 
+@font-face {
+  font-family: 'Acrobat Bold';
+  src: url("/assets/fonts/Akrobatsemibold.woff") format("truetype"); }
+
+html,
+body {
+  font-family: 'Acrobat Semibold', sans-serif; }
+
+* {
+  outline: 0 !important; }
+
 /* ------------------------------------
-    Header Styles
+    Header&Nav Styles
 ------------------------------------- */
-.header {
-  background-color: #1d1d1d;
-  min-height: 150px; }
-
-.logo {
-  padding: 20px  0;
-  display: block; }
-
 .navbar-default {
   background-color: transparent;
   background-image: none;
   border: none;
-  box-shadow: none; }
+  box-shadow: none;
+  margin-top: 52px; }
 
 .navbar-default .navbar-nav > li > a {
   color: #fff;
-  font-size: 18px; }
+  font-size: 18px;
+  padding: 12px 34px;
+  position: relative;
+  transition: all .3s ease; }
+  .navbar-default .navbar-nav > li > a:before {
+    position: absolute;
+    content: '';
+    height: 70%;
+    width: 1px;
+    background: #7b7b7b;
+    left: 100%;
+    top: 6px; }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: #bd9e13;
+  border-radius: 2px;
+  border: none; }
+  .navbar-default .navbar-nav > li > a:hover:before,
+  .navbar-default .navbar-nav > li > a:focus:before {
+    content: none; }
+
+.navbar-default .navbar-nav > li.active > a,
+.navbar-default .navbar-nav > li.active--franch > a {
+  position: relative; }
+  .navbar-default .navbar-nav > li.active > a:before,
+  .navbar-default .navbar-nav > li.active--franch > a:before {
+    content: none; }
+
+.navbar-default .navbar-nav > li.active--franch > a {
+  color: #bd9e13; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: #bd9e13;
+  border-radius: 2px;
+  background-image: none;
+  color: #fff;
+  cursor: pointer; }
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+  cursor: pointer; }
+
+.header {
+  background-color: #1d1d1d;
+  min-height: 150px; }
+  .header__logo {
+    padding: 20px 0;
+    display: block; }
+
+/* ------------------------------------
+    Restornats&Slider Styles
+------------------------------------- */
+.restaurants {
+  position: relative; }
+  .restaurants:after {
+    position: absolute;
+    content: '.';
+    background-image: url(/assets/sprites/sprite.png);
+    background-position: 0px 0px;
+    width: 101px;
+    height: 101px;
+    color: transparent;
+    left: 46%;
+    bottom: -50px; }
+
+.slider {
+  position: relative; }
+  .slider__image {
+    min-height: 704px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .slider__caption {
+    position: absolute;
+    top: 46%;
+    left: 62%;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+  .slider__logo {
+    display: inline-block; }
+  .slider__button {
+    margin-top: 100px;
+    margin-left: 40px;
+    padding: 20px 80px;
+    background-color: #bd9e13;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Acrobat Bold', sans-serif;
+    transition: all .3s ease; }
+    .slider__button:hover, .slider__button:focus {
+      text-decoration: none;
+      background-color: #d6b315;
+      color: #fff; }
+
+.slick-prev {
+  left: 25px;
+  z-index: 100;
+  background-image: url(/assets/sprites/sprite.png);
+  background-position: -237px -32px;
+  width: 65px;
+  height: 65px; }
+  .slick-prev:before {
+    content: none; }
+
+.slick-next {
+  right: 25px;
+  background-image: url(/assets/sprites/sprite.png);
+  background-position: -172px -32px;
+  width: 65px;
+  height: 65px; }
+  .slick-next:before {
+    content: none; }
+
+.slick-prev:hover,
+.slick-prev:focus {
+  background-image: url(/assets/sprites/sprite.png);
+  background-position: -237px -32px;
+  width: 65px;
+  height: 65px; }
+
+.slick-next:hover,
+.slick-next:focus {
+  background-image: url(/assets/sprites/sprite.png);
+  background-position: -172px -32px;
+  width: 65px;
+  height: 65px; }
+
+.slick-prev,
+.slick-next {
+  width: 65px;
+  height: 65px; }

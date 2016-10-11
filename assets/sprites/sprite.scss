@@ -1,0 +1,228 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-arrow-next-name: 'icon__arrow--next';
+$icon-arrow-next-x: 172px;
+$icon-arrow-next-y: 32px;
+$icon-arrow-next-offset-x: -172px;
+$icon-arrow-next-offset-y: -32px;
+$icon-arrow-next-width: 65px;
+$icon-arrow-next-height: 65px;
+$icon-arrow-next-total-width: 532px;
+$icon-arrow-next-total-height: 101px;
+$icon-arrow-next-image: 'sprite.png';
+$icon-arrow-next: (172px, 32px, -172px, -32px, 65px, 65px, 532px, 101px, 'sprite.png', 'icon__arrow--next', );
+$icon-arrow-prev-name: 'icon__arrow--prev';
+$icon-arrow-prev-x: 237px;
+$icon-arrow-prev-y: 32px;
+$icon-arrow-prev-offset-x: -237px;
+$icon-arrow-prev-offset-y: -32px;
+$icon-arrow-prev-width: 65px;
+$icon-arrow-prev-height: 65px;
+$icon-arrow-prev-total-width: 532px;
+$icon-arrow-prev-total-height: 101px;
+$icon-arrow-prev-image: 'sprite.png';
+$icon-arrow-prev: (237px, 32px, -237px, -32px, 65px, 65px, 532px, 101px, 'sprite.png', 'icon__arrow--prev', );
+$icon-battlements-name: 'icon__battlements';
+$icon-battlements-x: 478px;
+$icon-battlements-y: 32px;
+$icon-battlements-offset-x: -478px;
+$icon-battlements-offset-y: -32px;
+$icon-battlements-width: 23px;
+$icon-battlements-height: 23px;
+$icon-battlements-total-width: 532px;
+$icon-battlements-total-height: 101px;
+$icon-battlements-image: 'sprite.png';
+$icon-battlements: (478px, 32px, -478px, -32px, 23px, 23px, 532px, 101px, 'sprite.png', 'icon__battlements', );
+$icon-fork-name: 'icon__fork';
+$icon-fork-x: 0px;
+$icon-fork-y: 0px;
+$icon-fork-offset-x: 0px;
+$icon-fork-offset-y: 0px;
+$icon-fork-width: 101px;
+$icon-fork-height: 101px;
+$icon-fork-total-width: 532px;
+$icon-fork-total-height: 101px;
+$icon-fork-image: 'sprite.png';
+$icon-fork: (0px, 0px, 0px, 0px, 101px, 101px, 532px, 101px, 'sprite.png', 'icon__fork', );
+$icon-letter-name: 'icon__letter';
+$icon-letter-x: 501px;
+$icon-letter-y: 32px;
+$icon-letter-offset-x: -501px;
+$icon-letter-offset-y: -32px;
+$icon-letter-width: 21px;
+$icon-letter-height: 17px;
+$icon-letter-total-width: 532px;
+$icon-letter-total-height: 101px;
+$icon-letter-image: 'sprite.png';
+$icon-letter: (501px, 32px, -501px, -32px, 21px, 17px, 532px, 101px, 'sprite.png', 'icon__letter', );
+$icon-map-marker-name: 'icon__map--marker';
+$icon-map-marker-x: 101px;
+$icon-map-marker-y: 0px;
+$icon-map-marker-offset-x: -101px;
+$icon-map-marker-offset-y: 0px;
+$icon-map-marker-width: 71px;
+$icon-map-marker-height: 90px;
+$icon-map-marker-total-width: 532px;
+$icon-map-marker-total-height: 101px;
+$icon-map-marker-image: 'sprite.png';
+$icon-map-marker: (101px, 0px, -101px, 0px, 71px, 90px, 532px, 101px, 'sprite.png', 'icon__map--marker', );
+$icon-phone-name: 'icon__phone';
+$icon-phone-x: 478px;
+$icon-phone-y: 55px;
+$icon-phone-offset-x: -478px;
+$icon-phone-offset-y: -55px;
+$icon-phone-width: 18px;
+$icon-phone-height: 18px;
+$icon-phone-total-width: 532px;
+$icon-phone-total-height: 101px;
+$icon-phone-image: 'sprite.png';
+$icon-phone: (478px, 55px, -478px, -55px, 18px, 18px, 532px, 101px, 'sprite.png', 'icon__phone', );
+$icon-sep-wh-name: 'icon__sep--wh';
+$icon-sep-wh-x: 172px;
+$icon-sep-wh-y: 0px;
+$icon-sep-wh-offset-x: -172px;
+$icon-sep-wh-offset-y: 0px;
+$icon-sep-wh-width: 360px;
+$icon-sep-wh-height: 16px;
+$icon-sep-wh-total-width: 532px;
+$icon-sep-wh-total-height: 101px;
+$icon-sep-wh-image: 'sprite.png';
+$icon-sep-wh: (172px, 0px, -172px, 0px, 360px, 16px, 532px, 101px, 'sprite.png', 'icon__sep--wh', );
+$icon-sep-yl-name: 'icon__sep--yl';
+$icon-sep-yl-x: 172px;
+$icon-sep-yl-y: 16px;
+$icon-sep-yl-offset-x: -172px;
+$icon-sep-yl-offset-y: -16px;
+$icon-sep-yl-width: 360px;
+$icon-sep-yl-height: 16px;
+$icon-sep-yl-total-width: 532px;
+$icon-sep-yl-total-height: 101px;
+$icon-sep-yl-image: 'sprite.png';
+$icon-sep-yl: (172px, 16px, -172px, -16px, 360px, 16px, 532px, 101px, 'sprite.png', 'icon__sep--yl', );
+$icon-soc-fb-name: 'icon__soc--fb';
+$icon-soc-fb-x: 434px;
+$icon-soc-fb-y: 32px;
+$icon-soc-fb-offset-x: -434px;
+$icon-soc-fb-offset-y: -32px;
+$icon-soc-fb-width: 44px;
+$icon-soc-fb-height: 51px;
+$icon-soc-fb-total-width: 532px;
+$icon-soc-fb-total-height: 101px;
+$icon-soc-fb-image: 'sprite.png';
+$icon-soc-fb: (434px, 32px, -434px, -32px, 44px, 51px, 532px, 101px, 'sprite.png', 'icon__soc--fb', );
+$icon-soc-in-name: 'icon__soc--in';
+$icon-soc-in-x: 346px;
+$icon-soc-in-y: 32px;
+$icon-soc-in-offset-x: -346px;
+$icon-soc-in-offset-y: -32px;
+$icon-soc-in-width: 44px;
+$icon-soc-in-height: 51px;
+$icon-soc-in-total-width: 532px;
+$icon-soc-in-total-height: 101px;
+$icon-soc-in-image: 'sprite.png';
+$icon-soc-in: (346px, 32px, -346px, -32px, 44px, 51px, 532px, 101px, 'sprite.png', 'icon__soc--in', );
+$icon-soc-tw-name: 'icon__soc--tw';
+$icon-soc-tw-x: 390px;
+$icon-soc-tw-y: 32px;
+$icon-soc-tw-offset-x: -390px;
+$icon-soc-tw-offset-y: -32px;
+$icon-soc-tw-width: 44px;
+$icon-soc-tw-height: 51px;
+$icon-soc-tw-total-width: 532px;
+$icon-soc-tw-total-height: 101px;
+$icon-soc-tw-image: 'sprite.png';
+$icon-soc-tw: (390px, 32px, -390px, -32px, 44px, 51px, 532px, 101px, 'sprite.png', 'icon__soc--tw', );
+$icon-soc-vk-name: 'icon__soc--vk';
+$icon-soc-vk-x: 302px;
+$icon-soc-vk-y: 32px;
+$icon-soc-vk-offset-x: -302px;
+$icon-soc-vk-offset-y: -32px;
+$icon-soc-vk-width: 44px;
+$icon-soc-vk-height: 51px;
+$icon-soc-vk-total-width: 532px;
+$icon-soc-vk-total-height: 101px;
+$icon-soc-vk-image: 'sprite.png';
+$icon-soc-vk: (302px, 32px, -302px, -32px, 44px, 51px, 532px, 101px, 'sprite.png', 'icon__soc--vk', );
+$spritesheet-width: 532px;
+$spritesheet-height: 101px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($icon-arrow-next, $icon-arrow-prev, $icon-battlements, $icon-fork, $icon-letter, $icon-map-marker, $icon-phone, $icon-sep-wh, $icon-sep-yl, $icon-soc-fb, $icon-soc-in, $icon-soc-tw, $icon-soc-vk, );
+$spritesheet: (532px, 101px, 'sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(/assets/sprites/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

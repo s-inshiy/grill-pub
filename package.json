@@ -32,6 +32,7 @@
     "gulp.spritesmith": "^6.2.1",
     "jquery": "^2.2.4",
     "jshint": "^2.9.2",
-    "jshint-stylish": "^2.0.0"
+    "jshint-stylish": "^2.0.0",
+    "slick-carousel": "^1.6.0"
   }
 }

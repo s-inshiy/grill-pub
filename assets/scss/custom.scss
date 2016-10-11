@@ -1,50 +1,198 @@
-html, body {
-    font-family: 'Acrobat Semibold', sans-serif;
-}
+@import "../sprites/sprite";
 
 @font-face {
     font-family: 'Acrobat Semibold';
     src: url('/assets/fonts/Akrobatsemibold.woff');
 }
 
-// @font-face {
-//     font-family: 'Lato-Bold';
-//     src: url('/assets/fonts/latobold.ttf') format('truetype');
-// }
+@font-face {
+    font-family: 'Acrobat Bold';
+    src: url('/assets/fonts/Akrobatsemibold.woff') format('truetype');
+}
+
+$yellow : #bd9e13;
+$yellow-hover: #d6b315;
+
+html,
+body {
+    font-family: 'Acrobat Semibold', sans-serif;
+}
+
+* {
+    outline: 0 !important;
+}
 
 // @font-face {
 //     font-family: 'Museo-Cyrl';
 //     src: url('/assets/fonts/Museocyrl500.ttf') format('truetype');
 // }
-
 // @font-face {
 //     font-family: 'Nautilus-Pompilius';
 //     src: url('/assets/fonts/nautiluspompilius.ttf') format('truetype');
 // }
 
-
 /* ------------------------------------
-    Header Styles
+    Header&Nav Styles
 ------------------------------------- */
-
-.header {
-    background-color: #1d1d1d;
-    min-height: 150px;
-}
-
-.logo {
-    padding: 20px  0;
-    display: block;
-}
 
 .navbar-default {
     background-color: transparent;
     background-image: none;
     border: none;
     box-shadow: none;
+    margin-top: 52px;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: #fff;
     font-size: 18px;
+    padding: 12px 34px;
+    position: relative;
+    transition: all .3s ease;
+    &:before {
+        position: absolute;
+        content: '';
+        height: 70%;
+        width: 1px;
+        background: #7b7b7b;
+        left: 100%;
+        top: 6px;
+    }
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    background-color: $yellow;
+    border-radius: 2px;
+    border: none;
+    &:before {
+        content: none;
+    }
+}
+
+.navbar-default .navbar-nav>li.active>a,
+.navbar-default .navbar-nav>li.active--franch>a {
+    position: relative;
+    &:before {
+        content: none;
+    }
+}
+
+.navbar-default .navbar-nav>li.active--franch>a {
+    color: $yellow;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: $yellow;
+    border-radius: 2px;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.header {
+    background-color: #1d1d1d;
+    min-height: 150px;
+    &__logo {
+        padding: 20px 0;
+        display: block;
+    }
+}
+
+/* ------------------------------------
+    Restornats&Slider Styles
+------------------------------------- */
+
+.restaurants {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '.';
+        @include sprite($icon-fork);
+        color: transparent;
+        left: 46%;
+        bottom: -50px;
+    }
+}
+
+.slider {
+    position: relative;
+    &__image {
+        min-height: 704px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__caption {
+        position: absolute;
+        top: 46%;
+        left: 62%;
+        width: 100%;
+        max-width: 900px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    &__logo {
+        display: inline-block;
+    }
+    &__button { 
+        margin-top: 100px;
+        margin-left: 40px;
+        padding: 20px 80px;
+        background-color: $yellow;
+        border: none;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Acrobat Bold', sans-serif;
+        transition: all .3s ease;
+        &:hover, &:focus {
+            text-decoration: none;
+            background-color: $yellow-hover;
+            color: #fff;
+        }
+    }
+}
+
+.slick-prev {
+    left: 25px;
+    z-index: 100;
+    @include sprite($icon-arrow-prev);
+    &:before {
+        content: none;
+    }
+}
+
+.slick-next {
+    right: 25px;
+    @include sprite($icon-arrow-next);
+    &:before {
+        content: none;
+    }
+}
+
+.slick-prev:hover,
+.slick-prev:focus {
+    @include sprite($icon-arrow-prev);
+}
+
+.slick-next:hover,
+.slick-next:focus {
+    @include sprite($icon-arrow-next);
+}
+
+.slick-prev,
+.slick-next {
+    width: 65px;
+    height: 65px;
 }
