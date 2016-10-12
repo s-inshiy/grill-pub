@@ -1,5 +1,4 @@
 @import "../sprites/sprite";
-
 @font-face {
     font-family: 'Acrobat Semibold';
     src: url('/assets/fonts/Akrobatsemibold.woff');
@@ -7,29 +6,39 @@
 
 @font-face {
     font-family: 'Acrobat Bold';
-    src: url('/assets/fonts/Akrobatsemibold.woff') format('truetype');
+    src: url('/assets/fonts/Akrobatsemibold.woff');
 }
 
-$yellow : #bd9e13;
-$yellow-hover: #d6b315;
+@font-face {
+    font-family: 'Acrobet-Light';
+    src: url('/assets/fonts/Akrobatlight.woff');
+}
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/assets/fonts/opensans.woff');
+}
+
+// @font-face {
+//     font-family: 'Open Sans Regular';
+//     src: url('/assets/fonts/opensans.woff');
+// }
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('/assets/fonts/opensansbold.woff');
+}
+
+$yellow: #bd9e13;
+$yellow-hover: #d6b315;
 html,
 body {
     font-family: 'Acrobat Semibold', sans-serif;
 }
 
 * {
-    outline: 0 !important;
+    outline: 0;
 }
 
-// @font-face {
-//     font-family: 'Museo-Cyrl';
-//     src: url('/assets/fonts/Museocyrl500.ttf') format('truetype');
-// }
-// @font-face {
-//     font-family: 'Nautilus-Pompilius';
-//     src: url('/assets/fonts/nautiluspompilius.ttf') format('truetype');
-// }
 
 /* ------------------------------------
     Header&Nav Styles
@@ -107,24 +116,26 @@ body {
     }
 }
 
+
 /* ------------------------------------
     Restornats&Slider Styles
 ------------------------------------- */
 
-.restaurants {
-    position: relative;
-    &:after {
-        position: absolute;
-        content: '.';
-        @include sprite($icon-fork);
-        color: transparent;
-        left: 46%;
-        bottom: -50px;
-    }
-}
-
+// .restaurants {
+// position: relative;
+// display: flex;
+// &:after {
+// content: '.';
+// width: 100%;
+// position: absolute;
+// @include sprite($icon-sep-big);
+// color: transparent;
+// bottom: -50px;
+// left:2%;
+// }
+// }
 .slider {
-    position: relative;
+    // position: relative;
     &__image {
         min-height: 704px;
         background-size: cover;
@@ -132,36 +143,49 @@ body {
         background-position: center;
     }
     &__caption {
-        position: absolute;
-        top: 46%;
-        left: 62%;
-        width: 100%;
-        max-width: 900px;
-        text-align: center;
-        transform: translate(-50%, -50%);
-    }
-    &__logo {
-        display: inline-block;
-    }
-    &__button { 
-        margin-top: 100px;
-        margin-left: 40px;
-        padding: 20px 80px;
-        background-color: $yellow;
-        border: none;
-        display: inline-block;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #fff;
-        font-size: 20px;
-        font-family: 'Acrobat Bold', sans-serif;
-        transition: all .3s ease;
-        &:hover, &:focus {
-            text-decoration: none;
-            background-color: $yellow-hover;
-            color: #fff;
+        // position: absolute;
+        // top: 46%;
+        // left: 62%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 704px;
+        // height: 100%;
+        // width: 100%;
+        // max-width: 900px;
+        // text-align: center;
+        // transform: translate(-50%, -50%);
+        &:after {
+            content: '.';
+            width: 100%;
+            margin: 20px auto -50px;
+            @include sprite($icon-sep-big);
         }
     }
+    &__logo {
+        // display: inline-block;
+        align-self: center;
+    }
+    // &__button {
+    //     margin: 100px auto;
+    //     // margin-left: 40px;
+    //     padding: 20px 80px;
+    //     background-color: $yellow;
+    //     border: none;
+    //     // display: inline-block;
+    //     text-decoration: none;
+    //     text-transform: uppercase;
+    //     color: #fff;
+    //     font-size: 20px;
+    //     font-family: 'Acrobat Bold', sans-serif;
+    //     transition: all .3s ease;
+    //     &:hover,
+    //     &:focus {
+    //         text-decoration: none;
+    //         background-color: $yellow-hover;
+    //         color: #fff;
+    //     }
+    // }
 }
 
 .slick-prev {
@@ -195,4 +219,178 @@ body {
 .slick-next {
     width: 65px;
     height: 65px;
+}
+
+.slick-track {
+    margin-bottom: 50px;
+}
+
+
+/* ------------------------------------
+    About Styles
+------------------------------------- */
+
+.title {
+    color: #fff;
+    font-family: 'Acrobet-Light', sans-serif;
+    font-size: 80px;
+    line-height: 0.7;
+    margin-top: 0;
+    &--about {
+        margin-bottom: 60px;
+    }
+    &--menu {
+        padding: 110px 0 40px;
+        display: inline-block;
+        &:after {
+            content: '';
+            display: block;
+            margin: 40px auto 0;
+            @include sprite($icon-sep-big);
+        }
+    }
+}
+
+.button {
+    margin: 100px auto;
+    padding: 20px 80px;
+    background-color: $yellow;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Acrobat Bold', sans-serif;
+    transition: all .3s ease;
+    display: inline-block;
+    outline: 1px solid rgba(255, 255, 255, 1);
+    outline-offset: -6px;
+    &--menu {
+        margin-top: 74px;
+    }
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        background-color: $yellow-hover;
+        outline: 1px solid rgba(255, 255, 255, 1);
+        outline-offset: -2px;
+        color: #fff;
+    }
+}
+
+.image {
+    outline: 1px solid rgba(255, 255, 255, 0.7);
+    outline-offset: -10px;
+    transition: all .3s ease;
+    &:hover {
+        cursor: pointer;
+        outline-offset: -2px;
+    }
+}
+
+.about {
+    min-height: 540px;
+    background-image: url(/assets/images/pattern__metal.jpg);
+    margin-top: -50px;
+    padding-top: 120px;
+    // &__title {
+    //     color: #fff;
+    //     font-family: 'Acrobet-Light', sans-serif;
+    //     font-size: 80px;
+    //     line-height: 0.7;
+    //     &--about {
+    //         margin-bottom: 60px;
+    //         margin-top: 0;
+    //     }
+    // }
+    &__info {
+        font-family: 'Open Sasns', sans-serif;
+        font-size: 16px;
+        color: #fff;
+        margin: 0 0 10px;
+    }
+    &__link {
+        font-family: 'Open Sans Bold', sans-serif;
+        font-size: 16px;
+        color: $yellow;
+        transition: all .3s ease;
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+            color: $yellow-hover;
+        }
+    }
+}
+
+
+/* ------------------------------------
+    Map Styles
+------------------------------------- */
+
+.location {
+    min-height: 605px;
+}
+
+
+/* ------------------------------------
+    Menu Styles
+------------------------------------- */
+
+.menu {
+    height: 1134px;
+    text-align: center;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom:-12px;
+        display: inline-block;
+        width: 100%;
+        height: 23px;
+        //  @include sprite($icon-battlements);
+        background-image: url(/assets/images/icon__battlements.png);
+         background-repeat: repeat-x;
+    }
+    &__item {
+        background-color: #1b1b1b;
+        padding-bottom: 36px;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-family: 'Acrobat Bold', sans-serif;
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 2.4px;
+        &:after {
+            content: '';
+            width: 40px;
+            display: block;
+            margin: 14px auto 10px;
+            height: 1px;
+            background-color: $yellow;
+            bottom: 0;
+            left: 46%;
+        }
+    }
+    &__info {
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 6px;
+        padding-bottom: 16px;
+        color: #717171;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    &__link {
+        width: 65px;
+        height: 65px;
+        margin: 0 auto;
+        cursor: pointer;
+        &:after {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            @include sprite($icon-arrow-next);
+        }
+    }
 }
