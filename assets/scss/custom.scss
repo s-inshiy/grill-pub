@@ -65,6 +65,7 @@ body {
         }
     }
     &--video {
+        text-align: center;
         padding: 110px 0 40px;
         &:after {
             content: '';
@@ -74,6 +75,7 @@ body {
         }
     }
     &--team {
+        text-align: center;
         padding: 110px 0 40px;
         &:after {
             content: '';
@@ -101,12 +103,16 @@ body {
     &--menu {
         margin-top: 74px;
     }
+    &--news {
+        margin-top: 4px;
+    }
     &:hover,
     &:focus {
         text-decoration: none;
         background-color: $yellow-hover;
         outline: 1px solid rgba(255, 255, 255, 1);
         outline-offset: -2px;
+        cursor: pointer;
         color: #fff;
     }
 }
@@ -198,7 +204,6 @@ body {
     }
 }
 
-
 /* ------------------------------------
     Restornats&Slider Styles
 ------------------------------------- */
@@ -264,7 +269,6 @@ body {
     margin-bottom: 50px;
 }
 
-
 /* ------------------------------------
     About Styles
 ------------------------------------- */
@@ -293,7 +297,6 @@ body {
     }
 }
 
-
 /* ------------------------------------
     Map Styles
 ------------------------------------- */
@@ -301,7 +304,6 @@ body {
 .location {
     min-height: 605px;
 }
-
 
 /* ------------------------------------
     Menu Styles
@@ -366,7 +368,6 @@ body {
     }
 }
 
-
 /* ------------------------------------
    Video Styles
 ------------------------------------- */
@@ -393,7 +394,6 @@ body {
     }
 }
 
-
 /* ------------------------------------
    Gallery Styles
 ------------------------------------- */
@@ -414,7 +414,6 @@ body {
     }
 }
 
-
 /* ------------------------------------
    Team Styles
 ------------------------------------- */
@@ -424,9 +423,82 @@ body {
     min-height: 750px;
     background-color: $yellow;
     padding-bottom: 20px;
-    &__item {
+    color: #fff;
+    position: relative;
+    &__img {
         height: 284px;
         background-position: center;
         background-repeat: no-repeat;
     }
+    &__title {
+        font-size: 24px;
+        font-family: 'Acrobat Bold', sans-serif;
+        margin-top: 30px;
+        display: block;
+        text-transform: uppercase;
+    }
+    &__pos {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+.slick-prev.slick-prev--team,
+.slick-next.slick-next--team,
+{
+    top: 54%;
+}
+
+/* ------------------------------------
+   News Styles
+------------------------------------- */
+
+.news {
+    // text-align: center;
+    min-height: 1116px;
+    background-image: url(/assets/images/pattern__metal.jpg);
+    &__title {
+        font-family: 'Acrobat Bold', sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #fff;
+        word-spacing: 16px;
+        text-align: left;
+        margin-top: 0;
+    }
+    &__time {
+        color: $yellow;
+        font-family: 'Open Sans', sans-serif;
+        text-align: left;
+        font-size: 14px;
+        margin-bottom: 16px;
+        display: inline-block;
+    }
+    &__info {
+        font-family: 'Open Sans Bold', sans-serif;
+        color: #9a9a9b;
+        font-size: 16px;
+        transition: all .3s ease;
+        margin-bottom: 4px;
+        &--more {
+            color: $yellow;
+            &:hover {
+                text-decoration: none;
+                color: $yellow-hover;
+                cursor: pointer;
+            }
+        }
+    }
+    &__img {
+        margin-bottom: 70px;
+    }
+}
+
+/* ------------------------------------
+    Footer  Styles
+------------------------------------- */
+
+.footer {
+    min-height: 384px;
+    background-color: $brown;
 }

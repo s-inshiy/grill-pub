@@ -93,6 +93,7 @@ body {
       width: 1140px;
       height: 101px; }
   .title--video {
+    text-align: center;
     padding: 110px 0 40px; }
     .title--video:after {
       content: '';
@@ -103,6 +104,7 @@ body {
       width: 360px;
       height: 16px; }
   .title--team {
+    text-align: center;
     padding: 110px 0 40px; }
     .title--team:after {
       content: '';
@@ -129,11 +131,14 @@ body {
   outline-offset: -6px; }
   .button--menu {
     margin-top: 74px; }
+  .button--news {
+    margin-top: 4px; }
   .button:hover, .button:focus {
     text-decoration: none;
     background-color: #d6b315;
     outline: 1px solid white;
     outline-offset: -2px;
+    cursor: pointer;
     color: #fff; }
 
 .image {
@@ -408,8 +413,66 @@ body {
   text-align: center;
   min-height: 750px;
   background-color: #bd9e13;
-  padding-bottom: 20px; }
-  .team__item {
+  padding-bottom: 20px;
+  color: #fff;
+  position: relative; }
+  .team__img {
     height: 284px;
     background-position: center;
     background-repeat: no-repeat; }
+  .team__title {
+    font-size: 24px;
+    font-family: 'Acrobat Bold', sans-serif;
+    margin-top: 30px;
+    display: block;
+    text-transform: uppercase; }
+  .team__pos {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif; }
+
+.slick-prev.slick-prev--team,
+.slick-next.slick-next--team {
+  top: 54%; }
+
+/* ------------------------------------
+   News Styles
+------------------------------------- */
+.news {
+  min-height: 1116px;
+  background-image: url(/assets/images/pattern__metal.jpg); }
+  .news__title {
+    font-family: 'Acrobat Bold', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    word-spacing: 16px;
+    text-align: left;
+    margin-top: 0; }
+  .news__time {
+    color: #bd9e13;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 16px;
+    display: inline-block; }
+  .news__info {
+    font-family: 'Open Sans Bold', sans-serif;
+    color: #9a9a9b;
+    font-size: 16px;
+    transition: all .3s ease;
+    margin-bottom: 4px; }
+    .news__info--more {
+      color: #bd9e13; }
+      .news__info--more:hover {
+        text-decoration: none;
+        color: #d6b315;
+        cursor: pointer; }
+  .news__img {
+    margin-bottom: 70px; }
+
+/* ------------------------------------
+    Footer  Styles
+------------------------------------- */
+.footer {
+  min-height: 384px;
+  background-color: #1d1d1d; }
