@@ -1,4 +1,5 @@
 @import "../sprites/sprite";
+
 @font-face {
     font-family: 'Acrobat Semibold';
     src: url('/assets/fonts/Akrobatsemibold.woff');
@@ -19,10 +20,6 @@
     src: url('/assets/fonts/opensans.woff');
 }
 
-// @font-face {
-//     font-family: 'Open Sans Regular';
-//     src: url('/assets/fonts/opensans.woff');
-// }
 @font-face {
     font-family: 'Open Sans Bold';
     src: url('/assets/fonts/opensansbold.woff');
@@ -31,6 +28,7 @@
 $yellow: #bd9e13;
 $yellow-hover: #d6b315;
 $brown: #1d1d1d;
+
 html,
 body {
     font-family: 'Acrobat Semibold', sans-serif;
@@ -40,12 +38,11 @@ body {
     outline: 0;
 }
 
-
 /* ------------------------------------
     UI KIT Styles
 ------------------------------------- */
 
-.title {
+.gptitle {
     color: #fff;
     font-family: 'Acrobet-Light', sans-serif;
     font-size: 80px;
@@ -86,7 +83,7 @@ body {
     }
 }
 
-.button {
+.gpbutton {
     margin: 100px auto;
     padding: 20px 80px;
     background-color: $yellow;
@@ -117,7 +114,7 @@ body {
     }
 }
 
-.image {
+.gpimage {
     outline: 1px solid rgba(255, 255, 255, 0.7);
     outline-offset: -10px;
     transition: all .3s ease;
@@ -268,6 +265,7 @@ body {
 .slick-track {
     margin-bottom: 50px;
 }
+
 
 /* ------------------------------------
     About Styles
@@ -501,4 +499,158 @@ body {
 .footer {
     min-height: 384px;
     background-color: $brown;
+    padding-top: 76px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    color: #9a9a9b;
+    &__title {
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-family: 'Acrobat Bold', sans-serif;
+        font-size: 24px;
+        color: $yellow;
+    }
+    &__info {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: #999;
+    }
+    &__prod {
+        transition: all .3s ease;
+        color: $yellow;
+        padding-top: 8px;
+        display: inline-block;
+        &:hover, &:focus, &:active {
+            text-decoration: none;
+            color: $yellow-hover; 
+        }
+    }
+}
+
+.gpicon {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    color: #999;
+    position: relative;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        color: $yellow;
+    }
+    &--tel {
+        &:before {
+            content: '';
+            position: absolute;
+            @include sprite($icon-phone);
+            top: 4px;
+            left: -9px;
+            height: 18px;
+            width: 18px;
+        }
+    }
+    &--mail {
+        &:before {
+            content: '';
+            position: absolute;
+            @include sprite($icon-letter);
+            top: 4px;
+            left: -9px;
+            height: 18px;
+            width: 18px;
+        }
+    }
+    &--vk {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        &:before {
+            content: '';
+            position: absolute;
+            @include sprite($icon-soc-vk);
+            height: 51px;
+            width: 44px;
+            left: -9px;
+        }
+    }
+    &--in {
+        display: inline-block;
+        margin: 0;
+        &:before {
+            content: '';
+            position: absolute;
+            @include sprite($icon-soc-in);
+            height: 51px;
+            width: 44px;
+            left: 54px;
+        }
+    }
+    &--fb {
+        display: inline-block;
+        margin: 0;
+        &:before {
+            content: '';
+            position: absolute;
+            @include sprite($icon-soc-fb);
+            height: 51px;
+            width: 44px;
+            left: 92px;
+        }
+    }
+    &--tw {
+        display: inline-block;
+        margin: 0;
+        &:before {
+            content: '';
+            position: absolute;
+            @include sprite($icon-soc-tw);
+            height: 51px;
+            width: 44px;
+            left: 130px;
+        }
+    }
+}
+
+.gpnav {
+    list-style: none;
+    margin-top: 54px;
+    padding-left: 0;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #7b7b7b;
+    transition: all .3s ease;
+    li {
+        display: inline-block;
+    }
+    &__item {
+        font-family: 'Acrobat Semibold', sans-serif;
+        color: #9a9a9b;
+        font-size: 18px;
+        padding: 12px 34px;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            height: 70%;
+            width: 1px;
+            background: #7b7b7b;
+            left: 100%;
+            top: 6px;
+        }
+        &:hover, &:focus, &:active {
+            text-decoration: none;
+            color: $yellow-hover;
+        }
+        &--last {
+            &:before {
+                content: none;
+            } 
+        }
+        &--active {
+            color: $yellow;
+        }
+    }
 }

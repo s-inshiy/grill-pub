@@ -73,18 +73,18 @@ body {
 /* ------------------------------------
     UI KIT Styles
 ------------------------------------- */
-.title {
+.gptitle {
   color: #fff;
   font-family: 'Acrobet-Light', sans-serif;
   font-size: 80px;
   line-height: 0.7;
   margin-top: 0; }
-  .title--about {
+  .gptitle--about {
     margin-bottom: 60px; }
-  .title--menu {
+  .gptitle--menu {
     padding: 110px 0 40px;
     display: inline-block; }
-    .title--menu:after {
+    .gptitle--menu:after {
       content: '';
       display: block;
       margin: 40px auto 0;
@@ -92,10 +92,10 @@ body {
       background-position: 0px 0px;
       width: 1140px;
       height: 101px; }
-  .title--video {
+  .gptitle--video {
     text-align: center;
     padding: 110px 0 40px; }
-    .title--video:after {
+    .gptitle--video:after {
       content: '';
       display: block;
       margin: 24px auto 0;
@@ -103,10 +103,10 @@ body {
       background-position: -172px -101px;
       width: 360px;
       height: 16px; }
-  .title--team {
+  .gptitle--team {
     text-align: center;
     padding: 110px 0 40px; }
-    .title--team:after {
+    .gptitle--team:after {
       content: '';
       display: block;
       margin: 24px auto 0;
@@ -115,7 +115,7 @@ body {
       width: 360px;
       height: 16px; }
 
-.button {
+.gpbutton {
   margin: 100px auto;
   padding: 20px 80px;
   background-color: #bd9e13;
@@ -129,11 +129,11 @@ body {
   display: inline-block;
   outline: 1px solid white;
   outline-offset: -6px; }
-  .button--menu {
+  .gpbutton--menu {
     margin-top: 74px; }
-  .button--news {
+  .gpbutton--news {
     margin-top: 4px; }
-  .button:hover, .button:focus {
+  .gpbutton:hover, .gpbutton:focus {
     text-decoration: none;
     background-color: #d6b315;
     outline: 1px solid white;
@@ -141,11 +141,11 @@ body {
     cursor: pointer;
     color: #fff; }
 
-.image {
+.gpimage {
   outline: 1px solid rgba(255, 255, 255, 0.7);
   outline-offset: -10px;
   transition: all .3s ease; }
-  .image:hover {
+  .gpimage:hover {
     cursor: pointer;
     outline-offset: -2px; }
 
@@ -475,4 +475,145 @@ body {
 ------------------------------------- */
 .footer {
   min-height: 384px;
-  background-color: #1d1d1d; }
+  background-color: #1d1d1d;
+  padding-top: 76px;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 14px;
+  color: #9a9a9b; }
+  .footer__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Acrobat Bold', sans-serif;
+    font-size: 24px;
+    color: #bd9e13; }
+  .footer__info {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #999; }
+  .footer__prod {
+    transition: all .3s ease;
+    color: #bd9e13;
+    padding-top: 8px;
+    display: inline-block; }
+    .footer__prod:hover, .footer__prod:focus, .footer__prod:active {
+      text-decoration: none;
+      color: #d6b315; }
+
+.gpicon {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  color: #999;
+  position: relative;
+  font-size: 16px;
+  padding-left: 20px;
+  margin-bottom: 20px; }
+  .gpicon:hover, .gpicon:focus, .gpicon:active {
+    text-decoration: none;
+    color: #bd9e13; }
+  .gpicon--tel:before {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/sprites/sprite.png);
+    background-position: -478px -140px;
+    width: 18px;
+    height: 18px;
+    top: 4px;
+    left: -9px;
+    height: 18px;
+    width: 18px; }
+  .gpicon--mail:before {
+    content: '';
+    position: absolute;
+    background-image: url(/assets/sprites/sprite.png);
+    background-position: -501px -117px;
+    width: 21px;
+    height: 17px;
+    top: 4px;
+    left: -9px;
+    height: 18px;
+    width: 18px; }
+  .gpicon--vk {
+    display: inline-block;
+    padding: 0;
+    margin: 0; }
+    .gpicon--vk:before {
+      content: '';
+      position: absolute;
+      background-image: url(/assets/sprites/sprite.png);
+      background-position: -434px -117px;
+      width: 44px;
+      height: 51px;
+      height: 51px;
+      width: 44px;
+      left: -9px; }
+  .gpicon--in {
+    display: inline-block;
+    margin: 0; }
+    .gpicon--in:before {
+      content: '';
+      position: absolute;
+      background-image: url(/assets/sprites/sprite.png);
+      background-position: -346px -117px;
+      width: 44px;
+      height: 51px;
+      height: 51px;
+      width: 44px;
+      left: 54px; }
+  .gpicon--fb {
+    display: inline-block;
+    margin: 0; }
+    .gpicon--fb:before {
+      content: '';
+      position: absolute;
+      background-image: url(/assets/sprites/sprite.png);
+      background-position: -302px -117px;
+      width: 44px;
+      height: 51px;
+      height: 51px;
+      width: 44px;
+      left: 92px; }
+  .gpicon--tw {
+    display: inline-block;
+    margin: 0; }
+    .gpicon--tw:before {
+      content: '';
+      position: absolute;
+      background-image: url(/assets/sprites/sprite.png);
+      background-position: -390px -117px;
+      width: 44px;
+      height: 51px;
+      height: 51px;
+      width: 44px;
+      left: 130px; }
+
+.gpnav {
+  list-style: none;
+  margin-top: 54px;
+  padding-left: 0;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #7b7b7b;
+  transition: all .3s ease; }
+  .gpnav li {
+    display: inline-block; }
+  .gpnav__item {
+    font-family: 'Acrobat Semibold', sans-serif;
+    color: #9a9a9b;
+    font-size: 18px;
+    padding: 12px 34px;
+    position: relative; }
+    .gpnav__item:before {
+      position: absolute;
+      content: '';
+      height: 70%;
+      width: 1px;
+      background: #7b7b7b;
+      left: 100%;
+      top: 6px; }
+    .gpnav__item:hover, .gpnav__item:focus, .gpnav__item:active {
+      text-decoration: none;
+      color: #d6b315; }
+    .gpnav__item--last:before {
+      content: none; }
+    .gpnav__item--active {
+      color: #bd9e13; }
