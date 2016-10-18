@@ -1,3 +1,105 @@
-p {
-  color: rebeccapurple;
+@import "../sprites/sprite";
+@media screen and (max-width:1200px) {
+  .slider {
+    &__caption {
+      &:after {
+        @include sprite($icon-fork);
+      }
+    }
+  }
+  .gptitle {
+    &--menu {
+      &:after {
+        @include sprite($icon-fork);
+      }
+    }
+  }
+  .navbar-default .navbar-nav>li>a {
+    padding: 12px 20px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .menu {
+    &__item {
+      background-color: #1b1b1b;
+      padding-bottom: 36px;
+      margin-bottom: 40px;
+    }
+  }
+  .gptitle {
+    &--about {
+      margin: 20px 0 30px;
+    }
+    &--menu {
+      padding-top: 64px;
+    }
+  }
+  .about {
+    padding-bottom: 40px;
+  }
+  .news {
+    &__img {
+      margin-bottom: 20px;
+    }
+    &__info {
+      &--more {
+        margin-bottom: 40px;
+        display: inline-block;
+      }
+    }
+  }
+  .gpbutton {
+    &--news {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gptitle {
+    font-size: 60px;
+    &--video {
+      padding-top: 74px;
+      padding-bottom: 50px;
+      &::after {
+        content: none;
+      }
+    }
+    &--team {
+      padding-top: 70kpx;
+      &::after {
+        content: none;
+      }
+    }
+  }
+  .video {
+    min-height: 580px;
+    &__main {
+      margin-top: 0;
+      min-height: 260px;
+    }
+  }
+  .footer {
+    padding-top: 46px;
+    &__prod {
+      padding-top: 20px;
+    }
+  }
+  .gpbutton {
+    &--menu {
+      margin-top: 50px;
+    }
+  }
+  .gallery {
+    padding-bottom: 60px;
+  }
+  .team {
+    min-height: 600px;
+  }
+  .header {
+    &__logo {
+      text-align: center;
+    }
+  }
 }

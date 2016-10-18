@@ -53,7 +53,7 @@
           </a>
         </div>
         <div class="col-md-10">
-          <nav class="navbar navbar-default">
+          <nav class="navbar navbar-default hidden-xs">
             <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
@@ -83,6 +83,21 @@
         </div>
       </div>
     </div>
+    <nav class="gpmobile hidden-md hidden-sm hidden-lg">
+      <ul class="gpmobile__menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Рестароны</a></li>
+        <li><a href="#">Новости и акции</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Франчайзинг</a></li>
+      </ul>
+      <button class="gpmobile__toggle" type="button" id="icon">
+          <span class="icon-1" id="a"></span>
+          <span class="icon-2" id="b"></span>
+          <span class="icon-3" id="c"></span>
+      </button>
+    </nav>
   </header>
   <!-- ------------------------------------
     Restornats&Slider 
@@ -134,7 +149,7 @@
     </h3>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-sm-6 col-lg-4">
           <div class="menu__item">
             <img src="/assets/images/menu__item--0.jpg" alt="#" class="gpimage">
             <h3 class="menu__title">Меню завтраков</h3>
@@ -142,7 +157,7 @@
             <a href="#" class="menu__link"></a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-6 col-lg-4">
           <div class="menu__item">
             <img src="/assets/images/menu__item--1.jpg" alt="#" class="gpimage">
             <h3 class="menu__title">Основное меню</h3>
@@ -150,7 +165,7 @@
             <a href="#" class="menu__link"></a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-6 col-lg-4">
           <div class="menu__item">
             <img src="/assets/images/menu__item--2.jpg" alt="#" class="gpimage">
             <h3 class="menu__title">Напитки</h3>
@@ -169,7 +184,7 @@
     <h3 class="gptitle gptitle--video">
       Посмотрите видео о нас
     </h3>
-    <video width="948" height="530" played class="video__main">
+    <video  width="90%" played class="video__main">
       <source src="/assets/images/video.mp4" type="video/mp4">
     </video>
   </section>
@@ -191,52 +206,43 @@
                 <li>
                   <figure class="grid__item">
                     <img src="/assets/images/gallery__item--0.jpg" alt="img" />
-                    <!--<figcaption><h3>Thundercats next level</h3><p>Portland nulla butcher ea XOXO, consequat Bushwick Pinterest elit twee pickled direct trade vero. </p></figcaption>-->
                   </figure>
                 </li>
                 <li>
                   <figure>
                     <img src="/assets/images/gallery__item--1.jpg" alt="img" />
-                    <!--<figcaption><h3>Bushwick selvage synth</h3><p>Bicycle rights flannel Shoreditch, art party laboris Bushwick sriracha authentic chambray hella umami sed distillery master cleanse.</p></figcaption>-->
                   </figure>
                 </li>
                 <li>
                   <figure>
                     <img src="/assets/images/gallery__item--2.jpg" alt="img" />
-                    <!--<figcaption><h3>Bottle wayfarers locavore</h3><p>Once there was a little asparagus, he was green and lonely.</p></figcaption>-->
                   </figure>
                 </li>
                 <li>
                   <figure>
                     <img src="/assets/images/gallery__item--6.jpg" alt="img" />
-                    <!--<figcaption><h3>Letterpress asymmetrical</h3><p>Chillwave hoodie ea gentrify aute sriracha consequat.</p></figcaption>-->
                   </figure>
                 </li>
                 <li>
                   <figure>
                     <img src="/assets/images/gallery__item--4.jpg" alt="img" />
-                    <!--<figcaption><h3>Vice velit chia</h3><p>Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis asymmetrical paleo. </p></figcaption>-->
                   </figure>
                 </li>
                 <li>
                   <figure>
                     <img src="/assets/images/gallery__item--5.jpg" alt="img" />
-                    <!--<figcaption><h3>Brunch semiotics</h3><p>Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo.</p></figcaption>-->
                   </figure>
                 </li>
                 <li>
                   <figure>
                     <img src="/assets/images/gallery__item--7.jpg" alt="img" />
-                    <!--<figcaption><h3>Kale chips lomo biodiesel</h3><p>Pariatur food truck street art consequat sustainable, et kogi beard qui paleo. </p></figcaption>-->
                   </figure>
                 </li>
                 <li>
                   <figure>
                     <img src="/assets/images/gallery__item--8.jpg" alt="img" />
-                    <!--<figcaption><h3>Exercitation occaecat</h3><p>Street chillwave hoodie ea gentrify.</p></figcaption>-->
                   </figure>
                 </li>
-
               </ul>
             </section>
             <!-- // grid-wrap -->
@@ -469,7 +475,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 hidden-xs hidden-sm">
               <a href="#" class="footer__logo">
                 <img src="/assets/images/header__logo.png" alt="logo">
               </a>
@@ -493,7 +499,7 @@
       <div class="row text-center">
         <div class="col-md-12">
           <nav>
-            <ul class="gpnav">
+            <ul class="gpnav hidden-xs hidden-sm">
               <li><a href="#" class="gpnav__item gpnav__item--active">Главная</a></li>
               <li><a href="#" class="gpnav__item">Рестароны</a></li>
               <li><a href="#" class="gpnav__item">Новости и акции</a></li>
