@@ -9,24 +9,19 @@
 
   <title>Grill Pub</title>
 
+  <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">-->
+
   <!-- Bootstrap 3 -->
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
-  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <!--Slick 1.6-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
 
-  <link rel="stylesheet" href="node_modules/galereya/css/jquery.galereya.css">
-
-  <!--<link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick-theme.css">-->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
-
-  <!--<link rel="stylesheet" type="text/css" href="assets/css/component.css" />-->
-
-  <!-- Custom && Media-Screens -->
-  <!--<link rel="stylesheet" href="assets/css/custom.min.css">
-  <link rel="stylesheet" href="assets/css/media-screens.min.css">-->
-
+  <!-- Custom Styles-->
   <link rel="stylesheet" href="assets/css/style.min.css">
 
   <script src="assets/js/modernizr.custom.js"></script>
@@ -41,6 +36,9 @@
 </head>
 
 <body>
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
   <!-- ------------------------------------
     Header
 ------------------------------------ -->
@@ -48,8 +46,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-2 text-left">
-            <img src="/assets/images/header__logo.svg" alt="logo" class="header__img">
-          </a>
+          <img src="assets/images/header__logo.svg" alt="logo" class="header__img">
         </div>
         <div class="col-xs-10 text-right">
           <span class=" gpicon--top hidden-lg hidden-md hidden-sm">Доставка еды</span>
@@ -106,17 +103,17 @@
 ------------------------------------ -->
   <section class="restaurants">
     <div class="slider">
-      <div class="slider__image" style="background-image:url(/assets/images/bg--slider.jpg)">
+      <div class="slider__image" style="background-image:url(assets/images/bg--slider.jpg)">
         <div class="slider__caption">
           <div class="slider__info hidden-sm hidden-md hidden-lg ">
             <h3 class="slider__title">Grill Pub</h3>
             <span class="slider__slogan">meat and bear</span>
           </div>
-          <img class="slider__logo  hidden-xs" src="/assets/images/slider__logo.png"></img>
+          <img class="slider__logo  hidden-xs" src="assets/images/slider__logo.png"></img>
           <a href="#" class="gpbutton gpbutton--mobile">Подробнее</a>
         </div>
       </div>
-      <div class="slider__image" style="background-image:url(/assets/images/bg--slider.jpg)"></div>
+      <div class="slider__image" style="background-image:url(assets/images/bg--slider.jpg)"></div>
     </div>
     </div>
   </section>
@@ -127,7 +124,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <img src="/assets/images/about.jpg" alt="#" class="gpimage">
+          <a href="#">
+            <img src="assets/images/about.jpg" alt="#" class="gpimage">
+          </a>
         </div>
         <div class="col-md-7">
           <h3 class="gptitle gptitle--about">О нас</h3>
@@ -143,13 +142,13 @@
   <!-- ------------------------------------
     Location&Map
 ------------------------------------ -->
-  <section class="location" style="background-image:url(/assets/images/map.jpg)">
+  <section class="location" style="background-image:url(assets/images/map.jpg)">
 
   </section>
   <!-- ------------------------------------
     Menu
 ------------------------------------ -->
-  <section class="menu" style="background-image:url(/assets/images/bg--wood.jpg)">
+  <section class="menu" style="background-image:url(assets/images/bg--wood.jpg)">
     <h3 class="gptitle gptitle--menu">
       Наше меню
     </h3>
@@ -157,7 +156,9 @@
       <div class="row">
         <div class="col-sm-6 col-lg-4">
           <div class="menu__item">
-            <img src="/assets/images/menu__item--0.jpg" alt="#" class="gpimage">
+            <a href="#">
+              <img src="assets/images/menu__item--0.jpg" alt="#" class="gpimage">
+            </a>
             <h3 class="menu__title">Меню завтраков</h3>
             <p class="menu__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laboriosam similique animi delectus,!</p>
             <a href="#" class="menu__link"></a>
@@ -165,7 +166,9 @@
         </div>
         <div class="col-sm-6 col-lg-4">
           <div class="menu__item">
-            <img src="/assets/images/menu__item--1.jpg" alt="#" class="gpimage">
+            <a href="#">
+              <img src="assets/images/menu__item--1.jpg" alt="#" class="gpimage">
+            </a>
             <h3 class="menu__title">Основное меню</h3>
             <p class="menu__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laboriosam similique animi delectus,!</p>
             <a href="#" class="menu__link"></a>
@@ -173,7 +176,9 @@
         </div>
         <div class="col-sm-6 col-lg-4">
           <div class="menu__item">
-            <img src="/assets/images/menu__item--2.jpg" alt="#" class="gpimage">
+            <a href="#">
+              <img src="assets/images/menu__item--2.jpg" alt="#" class="gpimage">
+            </a>
             <h3 class="menu__title">Напитки</h3>
             <p class="menu__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laboriosam similique animi delectus,!</p>
             <a href="#" class="menu__link"></a>
@@ -190,63 +195,63 @@
     <h3 class="gptitle gptitle--video">
       Посмотрите видео о нас
     </h3>
-    <video width="90%" played class="video__main">
-      <source src="/assets/images/video.mp4" type="video/mp4">
+    <video controls  played class="video__main">
+      <source src="assets/images/video.mp4" type="video/mp4">
     </video>
   </section>
   <!-- ------------------------------------
     Gallery
 ------------------------------------ -->
-  <section class="gallery" style="background-image:url(/assets/images/bg--wood.jpg)">
+  <section class="gallery" style="background-image:url(assets/images/bg--wood.jpg)">
     <h3 class="gptitle gptitle--video">
       Фотогалерея
     </h3>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-                    <div id="grid-gallery" class="grid-gallery">
+          <div id="grid-gallery" class="grid-gallery">
             <section class="grid-wrap">
               <ul class="grid">
                 <li class="grid-sizer"></li>
                 <!-- for Masonry column width -->
                 <li>
                   <figure class="grid__item">
-                    <img src="/assets/images/gallery__item--0.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--0.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
                   <figure>
-                    <img src="/assets/images/gallery__item--1.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--1.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
                   <figure>
-                    <img src="/assets/images/gallery__item--2.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--2.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
                   <figure>
-                    <img src="/assets/images/gallery__item--6.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--6.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
                   <figure>
-                    <img src="/assets/images/gallery__item--4.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--4.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
                   <figure>
-                    <img src="/assets/images/gallery__item--5.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--5.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
                   <figure>
-                    <img src="/assets/images/gallery__item--7.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--7.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
                   <figure>
-                    <img src="/assets/images/gallery__item--8.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--8.jpg" alt="img" />
                   </figure>
                 </li>
               </ul>
@@ -261,7 +266,7 @@
                       <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat
                         delectus. .</p>
                     </figcaption>
-                    <img src="/assets/images/gallery__item--0.jpg" class="gpgallery--0" alt="img" />
+                    <img src="assets/images/gallery__item--0.jpg" class="gpgallery--0" alt="img" />
                   </figure>
                 </li>
                 <li>
@@ -270,7 +275,7 @@
                       <h3>Vice velit chia</h3>
                       <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over.</p>
                     </figcaption>
-                    <img src="/assets/images/gallery__item--1.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--1.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
@@ -279,7 +284,7 @@
                       <h3>Vice velit chia</h3>
                       <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over.</p>
                     </figcaption>
-                    <img src="/assets/images/gallery__item--2.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--2.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
@@ -288,7 +293,7 @@
                       <h3>Vice velit chia</h3>
                       <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over.</p>
                     </figcaption>
-                    <img src="/assets/images/gallery__item--3.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--3.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
@@ -297,7 +302,7 @@
                       <h3>Vice velit chia</h3>
                       <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over.</p>
                     </figcaption>
-                    <img src="/assets/images/gallery__item--4.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--4.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
@@ -306,7 +311,7 @@
                       <h3>Vice velit chia</h3>
                       <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. </p>
                     </figcaption>
-                    <img src="/assets/images/gallery__item--5.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--5.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
@@ -315,7 +320,7 @@
                       <h3>Vice velit chia</h3>
                       <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over.</p>
                     </figcaption>
-                    <img src="/assets/images/gallery__item--6.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--6.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
@@ -324,7 +329,7 @@
                       <h3>Vice velit chia</h3>
                       <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over.</p>
                     </figcaption>
-                    <img src="/assets/images/gallery__item--7.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--7.jpg" alt="img" />
                   </figure>
                 </li>
                 <li>
@@ -333,7 +338,7 @@
                       <h3>Vice velit chia</h3>
                       <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. </p>
                     </figcaption>
-                    <img src="/assets/images/gallery__item--8.jpg" alt="img" />
+                    <img src="assets/images/gallery__item--8.jpg" alt="img" />
                   </figure>
                 </li>
               </ul>
@@ -363,32 +368,32 @@
     <div class="container">
       <div class="team__slider ">
         <div class="team__item">
-          <div class="team__img" style="background-image:url(/assets/images/team__item--0.png)"></div>
+          <div class="team__img" style="background-image:url(assets/images/team__item--0.png)"></div>
           <h3 class="team__title">Иван Иванов</h3>
           <span class="team__pos">Chief</span>
         </div>
         <div class="team__item">
-          <div class="team__img" style="background-image:url(/assets/images/team__item--1.png)"></div>
+          <div class="team__img" style="background-image:url(assets/images/team__item--1.png)"></div>
           <h3 class="team__title">Фёдор Добровольский</h3>
           <span class="team__pos">Poissonnier Sous Chief</span>
         </div>
         <div class="team__item">
-          <div class="team__img" style="background-image:url(/assets/images/team__item--2.png)"></div>
+          <div class="team__img" style="background-image:url(assets/images/team__item--2.png)"></div>
           <h3 class="team__title">Арианна Гранде</h3>
           <span class="team__pos">Saucier Sous Chief</span>
         </div>
         <div class="team__item">
-          <div class="team__img" style="background-image:url(/assets/images/team__item--3.png)"></div>
+          <div class="team__img" style="background-image:url(assets/images/team__item--3.png)"></div>
           <h3 class="team__title">Людмила Буйнова</h3>
           <span class="team__pos">Dessert Sous Chief</span>
         </div>
         <div class="team__item">
-          <div class="team__img" style="background-image:url(/assets/images/team__item--2.png)"></div>
+          <div class="team__img" style="background-image:url(assets/images/team__item--2.png)"></div>
           <h3 class="team__title">Иван Иванов</h3>
           <span class="team__pos">Chief</span>
         </div>
         <div class="team__item">
-          <div class="team__img" style="background-image:url(/assets/images/team__item--1.png)"></div>
+          <div class="team__img" style="background-image:url(assets/images/team__item--1.png)"></div>
           <h3 class="team__title">Иван Иванов</h3>
           <span class="team__pos">Chief</span>
         </div>
@@ -405,7 +410,9 @@
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-6">
-              <img src="/assets/images/news__item--0.jpg" alt="" class="news__img gpimage">
+              <a href="#">
+                <img src="assets/images/news__item--0.jpg" alt="" class="news__img gpimage">
+              </a>
             </div>
             <div class="col-md-6">
               <h3 class="news__title">Our Prestigious Awards</h3>
@@ -419,7 +426,9 @@
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-6">
-              <img src="/assets/images/news__item--1.jpg" alt="" class="news__img gpimage">
+              <a href="#">
+                <img src="assets/images/news__item--1.jpg" alt="" class="news__img gpimage">
+              </a>
             </div>
             <div class="col-md-6">
               <h3 class="news__title">Our Prestigious Awards</h3>
@@ -433,7 +442,9 @@
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-6">
-              <img src="/assets/images/news__item--2.jpg" alt="" class="news__img gpimage">
+              <a href="#">
+                <img src="assets/images/news__item--2.jpg" alt="" class="news__img gpimage">
+              </a>
             </div>
             <div class="col-md-6">
               <h3 class="news__title">Our Prestigious Awards</h3>
@@ -447,7 +458,9 @@
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-6">
-              <img src="/assets/images/news__item--3.jpg" alt="" class="news__img gpimage">
+              <a href="#">
+              <img src="assets/images/news__item--3.jpg" alt="" class="news__img gpimage">
+              </a>
             </div>
             <div class="col-md-6">
               <h3 class="news__title">Our Prestigious Awards</h3>
@@ -476,7 +489,7 @@
           <div class="row">
             <div class="col-md-3 hidden-xs hidden-sm">
               <a href="#" class="footer__logo">
-                <img src="/assets/images/header__logo.png" alt="logo">
+                <img src="assets/images/header__logo.svg" alt="logo">
               </a>
             </div>
             <div class="col-md-9">
@@ -518,21 +531,23 @@
 
   </footer>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/jquery.event.move/js/jquery.event.move.js"></script>
-  <script src="node_modules/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+  <!--<script src="node_modules/jquery/dist/jquery.min.js"></script>-->
+  <!--<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/jquery.event.move.js"></script>
+  <script src="assets/js/jquery.event.swipe.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
   <script src="assets/js/imagesloaded.pkgd.min.js"></script>
   <script src="assets/js/classie.js"></script>
   <script src="assets/js/cbpGridGallery.js"></script>
-  <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
 
-  <!-- Scripts JS -->
-  <script src="assets/js/scripts.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/scripts.min.js"></script>
 
 </body>
 

@@ -155,7 +155,6 @@
 .icon:before,
 .icon:after {
   font-family: 'fontawesome';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -208,7 +207,7 @@ span.nav-close:before {
     width: 33.3%; }
   .info-keys:before {
     left: 10px;
-    background: url(/assets/images/gallery__swipe.svg) no-repeat center;
+    background: url(../../assets/images/gallery__swipe.svg) no-repeat center;
     height: 30px;
     width: 30px;
     content: '';
@@ -288,23 +287,23 @@ The `sprites` mixin generates identical output to the CSS template
 */
 @font-face {
   font-family: 'Acrobat Semibold';
-  src: url("/assets/fonts/Akrobatsemibold.woff"); }
+  src: url("../../assets/fonts/Akrobatsemibold.woff"); }
 
 @font-face {
   font-family: 'Acrobat Bold';
-  src: url("/assets/fonts/Akrobatsemibold.woff"); }
+  src: url("../../assets/fonts/Akrobatsemibold.woff"); }
 
 @font-face {
   font-family: 'Acrobat-Light';
-  src: url("/assets/fonts/Akrobatlight.woff"); }
+  src: url("../../assets/fonts/Akrobatlight.woff"); }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url("/assets/fonts/opensans.woff"); }
+  src: url("../../assets/fonts/opensans.woff"); }
 
 @font-face {
   font-family: 'Open Sans Bold';
-  src: url("/assets/fonts/opensansbold.woff"); }
+  src: url("../../assets/fonts/opensansbold.woff"); }
 
 html,
 body {
@@ -344,7 +343,7 @@ button {
       content: '';
       display: block;
       margin: 40px auto 0;
-      background-image: url(/assets/sprites/sprite.png);
+      background-image: url(../../assets/sprites/sprite.png);
       background-position: 0px 0px;
       width: 1140px;
       height: 101px; }
@@ -355,7 +354,7 @@ button {
       content: '';
       display: block;
       margin: 24px auto 0;
-      background-image: url(/assets/sprites/sprite.png);
+      background-image: url(../../assets/sprites/sprite.png);
       background-position: -172px -101px;
       width: 360px;
       height: 16px; }
@@ -366,7 +365,7 @@ button {
       content: '';
       display: block;
       margin: 24px auto 0;
-      background-image: url(/assets/sprites/sprite.png);
+      background-image: url(../../assets/sprites/sprite.png);
       background-position: -532px -101px;
       width: 360px;
       height: 16px; }
@@ -383,24 +382,25 @@ button {
   font-family: 'Acrobat Bold', sans-serif;
   transition: all .3s ease;
   display: inline-block;
-  outline: 1px solid white;
+  letter-spacing: 1.4px;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
   outline-offset: -6px; }
   .gpbutton--menu {
     margin-top: 74px; }
   .gpbutton--news {
     margin-top: 4px; }
   .gpbutton--mobile {
-    margin: 40px auto 100px; }
+    margin: 90px auto 100px; }
   .gpbutton:hover, .gpbutton:focus {
     text-decoration: none;
     background-color: #d6b315;
-    outline: 1px solid white;
+    outline: 1px solid rgba(255, 255, 255, 0.5);
     outline-offset: -2px;
     cursor: pointer;
     color: #fff; }
 
 .gpimage {
-  outline: 1px solid rgba(255, 255, 255, 0.7);
+  outline: 1px solid rgba(255, 255, 255, 0.5);
   outline-offset: -10px;
   transition: all .3s ease;
   width: 100%; }
@@ -641,7 +641,7 @@ button {
     content: '.';
     width: 100%;
     margin: 20px auto -50px;
-    background-image: url(/assets/sprites/sprite.png);
+    background-image: url(../../assets/sprites/sprite.png);
     background-position: 0px 0px;
     width: 1140px;
     height: 101px; }
@@ -668,7 +668,7 @@ button {
 .slick-prev {
   left: 25px;
   z-index: 100;
-  background-image: url(/assets/sprites/sprite.png);
+  background-image: url(../../assets/sprites/sprite.png);
   background-position: -237px -117px;
   width: 65px;
   height: 65px; }
@@ -677,7 +677,7 @@ button {
 
 .slick-next {
   right: 25px;
-  background-image: url(/assets/sprites/sprite.png);
+  background-image: url(../../assets/sprites/sprite.png);
   background-position: -172px -117px;
   width: 65px;
   height: 65px; }
@@ -686,14 +686,14 @@ button {
 
 .slick-prev:hover,
 .slick-prev:focus {
-  background-image: url(/assets/sprites/sprite.png);
+  background-image: url(../../assets/sprites/sprite.png);
   background-position: -237px -117px;
   width: 65px;
   height: 65px; }
 
 .slick-next:hover,
 .slick-next:focus {
-  background-image: url(/assets/sprites/sprite.png);
+  background-image: url(../../assets/sprites/sprite.png);
   background-position: -172px -117px;
   width: 65px;
   height: 65px; }
@@ -733,7 +733,7 @@ button {
 ------------------------------------- */
 .about {
   min-height: 540px;
-  background-image: url(/assets/images/pattern__metal.jpg);
+  background-image: url(../../assets/images/pattern__metal.jpg);
   margin-top: -50px;
   padding-top: 120px; }
   .about__info {
@@ -772,7 +772,7 @@ button {
     display: inline-block;
     width: 100%;
     height: 23px;
-    background-image: url(/assets/images/icon__battlements.png);
+    background-image: url(../../assets/images/icon__battlements.png);
     background-repeat: repeat-x; }
   .menu__item {
     background-color: #1b1b1b;
@@ -808,7 +808,7 @@ button {
       content: '';
       display: block;
       margin: 0 auto;
-      background-image: url(/assets/sprites/sprite.png);
+      background-image: url(../../assets/sprites/sprite.png);
       background-position: -172px -117px;
       width: 65px;
       height: 65px; }
@@ -829,7 +829,7 @@ button {
     display: inline-block;
     width: 100%;
     height: 23px;
-    background-image: url(/assets/images/icon__battlements.png);
+    background-image: url(../../assets/images/icon__battlements.png);
     background-repeat: repeat-x; }
   .video__main {
     margin-top: 30px;
@@ -883,7 +883,7 @@ button {
 .news {
   overflow: hidden;
   min-height: 1116px;
-  background-image: url(/assets/images/pattern__metal.jpg); }
+  background-image: url(../../assets/images/pattern__metal.jpg); }
   .news__title {
     font-family: 'Acrobat Bold', sans-serif;
     font-size: 24px;
@@ -961,10 +961,7 @@ button {
   .gpicon--tel:before {
     content: '';
     position: absolute;
-    background-image: url(/assets/sprites/sprite.png);
-    background-position: -478px -140px;
-    width: 18px;
-    height: 18px;
+    background: url(../../assets/images/icon__phone.svg) no-repeat center;
     top: 4px;
     left: -2px;
     height: 18px;
@@ -972,10 +969,7 @@ button {
   .gpicon--mail:before {
     content: '';
     position: absolute;
-    background-image: url(/assets/sprites/sprite.png);
-    background-position: -501px -117px;
-    width: 21px;
-    height: 17px;
+    background: url(../../assets/images/icon__letter.svg) no-repeat center;
     top: 4px;
     left: -2px;
     height: 18px;
@@ -988,10 +982,8 @@ button {
     .gpicon--vk:before {
       content: '';
       position: absolute;
-      background-image: url(/assets/sprites/sprite.png);
-      background-position: -434px -117px;
-      width: 44px;
       height: 51px;
+      background: url(../../assets/images/icon__soc--vk.svg) no-repeat center;
       width: 44px;
       left: -2px; }
   .gpicon--in {
@@ -1001,10 +993,8 @@ button {
     .gpicon--in:before {
       content: '';
       position: absolute;
-      background-image: url(/assets/sprites/sprite.png);
-      background-position: -346px -117px;
-      width: 44px;
       height: 51px;
+      background: url(../../assets/images/icon__soc--in.svg) no-repeat center;
       width: 44px;
       left: 61px; }
   .gpicon--fb {
@@ -1014,10 +1004,8 @@ button {
     .gpicon--fb:before {
       content: '';
       position: absolute;
-      background-image: url(/assets/sprites/sprite.png);
-      background-position: -302px -117px;
-      width: 44px;
       height: 51px;
+      background: url(../../assets/images/icon__soc--fb.svg) no-repeat center;
       width: 44px;
       left: 99px; }
   .gpicon--tw {
@@ -1028,10 +1016,8 @@ button {
       content: '';
       position: absolute;
       width: 44px;
-      background-image: url(/assets/sprites/sprite.png);
-      background-position: -390px -117px;
-      width: 44px;
       height: 51px;
+      background: url(../../assets/images/icon__soc--tw.svg) no-repeat center;
       left: 137px; }
   .gpicon--top {
     display: block;
@@ -1042,16 +1028,15 @@ button {
     .gpicon--top:before {
       content: '';
       position: absolute;
-      background-image: url(/assets/sprites/sprite.png);
-      top: 2px;
       height: 18px;
       width: 18px;
+      top: 2px;
       left: initial;
       right: 128px; }
 
 span.nav-next:before {
   content: '';
-  background-image: url(/assets/images/gallery__arrow--next.png);
+  background-image: url(../../assets/images/gallery__arrow--next.png);
   height: 50px;
   width: 50px;
   position: absolute;
@@ -1059,7 +1044,7 @@ span.nav-next:before {
 
 span.nav-prev:before {
   content: '';
-  background-image: url(/assets/images/gallery__arrow--prev.png);
+  background-image: url(../../assets/images/gallery__arrow--prev.png);
   height: 50px;
   width: 50px;
   position: absolute;
@@ -1068,13 +1053,20 @@ span.nav-prev:before {
 span.nav-close:before {
   left: 10px;
   top: 20px;
-  background: url(/assets/images/gallery__close.svg) no-repeat center;
+  background: url(../../assets/images/gallery__close.svg) no-repeat center;
   height: 30px;
   width: 30px;
   content: '';
   position: absolute;
   background-size: contain;
   border: none; }
+
+#preloader {
+  background-color: #bd9e13;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999999; }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -1123,12 +1115,12 @@ The `sprites` mixin generates identical output to the CSS template
 */
 @media screen and (max-width: 1200px) {
   .slider__caption:after {
-    background-image: url(/assets/sprites/sprite.png);
+    background-image: url(../../assets/sprites/sprite.png);
     background-position: 0px -101px;
     width: 101px;
     height: 101px; }
   .gptitle--menu:after {
-    background-image: url(/assets/sprites/sprite.png);
+    background-image: url(../../assets/sprites/sprite.png);
     background-position: 0px -101px;
     width: 101px;
     height: 101px; }
@@ -1155,7 +1147,9 @@ The `sprites` mixin generates identical output to the CSS template
     margin-top: 20px; }
   .navbar-default .navbar-nav > li > a {
     padding: 12px 11px;
-    font-size: 16px; } }
+    font-size: 16px; }
+  .video__main {
+    width: 90%; } }
 
 @media screen and (max-width: 992px) {
   .slick-slide img {
@@ -1216,6 +1210,8 @@ The `sprites` mixin generates identical output to the CSS template
     margin-bottom: 0; }
   .gpbutton {
     padding: 20px 60px; }
+    .gpbutton--mobile {
+      margin: 40px auto 100px; }
   span.nav-close:before {
     height: 22px;
     width: 22px;

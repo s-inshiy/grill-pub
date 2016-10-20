@@ -58,6 +58,11 @@
     padding: 12px 11px;
     font-size: 16px;
   }
+  .video {
+    &__main {
+      width: 90%;
+    }
+  }
 }
 
 @media screen and (max-width:992px) {
@@ -149,6 +154,9 @@
   }
   .gpbutton {
     padding: 20px 60px;
+        &--mobile {
+        margin: 40px auto 100px;
+    }
   }
   span.nav-close:before {
     height: 22px;
