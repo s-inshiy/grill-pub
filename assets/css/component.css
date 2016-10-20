@@ -224,12 +224,12 @@ span.nav-close:before {
 .info-keys {
 	position: fixed;
 	top: 10px;
-	left: 10px;
+  left: 10px;
 	width: 60px;
 	font-size: 8px;
 	padding-top: 20px;
 	text-transform: uppercase;
-	color: #fff;
+	color: #bd9e13;
 	letter-spacing: 1px;
 	text-align: center;
 }
@@ -240,7 +240,7 @@ span.nav-close:before {
 	top: 0;
 	width: 16px;
 	height: 16px;
-	border: 1px solid #fff;
+	border: 1px solid #bd9e13;
 	text-align: center;
 	line-height: 14px;
 	font-size: 12px;
@@ -285,7 +285,7 @@ span.nav-close:before {
 	}
 
 	.info-keys {
-		display: none;
+		/*display: none;*/
 	}
 
 }

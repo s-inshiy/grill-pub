@@ -31,8 +31,10 @@
     "gulp-util": "^3.0.5",
     "gulp.spritesmith": "^6.2.1",
     "jquery": "^2.2.4",
+    "jquery.event.swipe": "^0.5.4",
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.0.0",
+    "masonry-layout": "^4.1.1",
     "photoswipe": "^4.1.1",
     "slick-carousel": "^1.6.0"
   }

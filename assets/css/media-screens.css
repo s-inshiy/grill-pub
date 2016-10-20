@@ -74,7 +74,10 @@ The `sprites` mixin generates identical output to the CSS template
     margin-bottom: 40px;
     display: inline-block; }
   .gpbutton--news {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .navbar-default .navbar-nav > li > a {
+    padding: 12px 11px;
+    font-size: 16px; } }
 
 @media screen and (max-width: 768px) {
   .gptitle {
@@ -94,14 +97,40 @@ The `sprites` mixin generates identical output to the CSS template
       margin-top: 0;
       min-height: 260px; }
   .footer {
-    padding-top: 46px; }
+    padding: 46px 0; }
     .footer__prod {
       padding-top: 20px; }
+    .footer__copy {
+      text-align: left; }
   .gpbutton--menu {
     margin-top: 50px; }
   .gallery {
     padding-bottom: 60px; }
   .team {
     min-height: 600px; }
-  .header__logo {
-    text-align: center; } }
+  .header {
+    min-height: 100px; }
+    .header__img {
+      height: 80px;
+      margin-top: 10px; }
+    .header__logo {
+      padding: 10px 0;
+      height: 80px; }
+  .slider__image {
+    min-height: 370px; }
+  .slider__caption {
+    min-height: 370px; }
+    .slider__caption:after {
+      content: none; }
+  .slideshow figure {
+    border: 10px solid #fff; }
+  .slideshow figcaption h3 {
+    margin-top: 10vh; }
+  .info-keys {
+    left: 6px; }
+  .about {
+    padding-top: 80px; }
+  .slick-dotted.slick-slider {
+    margin-bottom: 0; }
+  .gpbutton {
+    padding: 20px 60px; } }

@@ -226,7 +226,22 @@ button {
   min-height: 150px; }
   .header__logo {
     padding: 20px 0;
-    display: block; }
+    display: inline-block; }
+  .header__link {
+    float: right;
+    margin-top: 34px;
+    padding: 16px 40px;
+    border: 1px solid #d6b315;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Acrobat Bold', sans-serif;
+    border-radius: 2px;
+    transition: all .3s ease; }
+    .header__link:hover, .header__link:active, .header__link:focus {
+      text-decoration: none;
+      background-color: #d6b315;
+      color: #fff; }
 
 /* ------------------------------------
     Restornats&Slider Styles
@@ -299,6 +314,28 @@ button {
 
 .slick-track {
   margin-bottom: 50px; }
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  outline: 0;
+  background: 0 0; }
+  .slick-dots li button:before {
+    content: ''; }
+
+.slick-dots li.slick-active button {
+  background: #bd9e13; }
+
+.slick-dots {
+  bottom: 80px; }
 
 /* ------------------------------------
     About Styles
@@ -516,6 +553,8 @@ button {
     .footer__prod:hover, .footer__prod:focus, .footer__prod:active {
       text-decoration: none;
       color: #d6b315; }
+  .footer__copy {
+    text-align: center; }
 
 .gpicon {
   display: block;
@@ -603,6 +642,22 @@ button {
       width: 44px;
       height: 51px;
       left: 137px; }
+  .gpicon--top {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    color: #999;
+    font-size: 16px;
+    margin: 14px 0;
+    padding-right: 30px; }
+    .gpicon--top:before {
+      content: '';
+      position: absolute;
+      background-image: url(/assets/sprites/sprite.png);
+      top: 4px;
+      height: 18px;
+      width: 18px;
+      left: initial;
+      right: 4px; }
 
 .gpnav {
   list-style: none;
@@ -643,7 +698,7 @@ button {
   width: 60px;
   height: 60px;
   background: #bd9e13;
-  z-index: 1000;
+  z-index: 12;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   opacity: 1;
@@ -704,7 +759,9 @@ button {
     z-index: 11;
     border-radius: 50%; }
 
-.icon-1, .icon-2, .icon-3 {
+.icon-1,
+.icon-2,
+.icon-3 {
   position: absolute;
   left: 32%;
   top: 50%;
@@ -722,10 +779,10 @@ button {
   animation-delay: 250ms; }
 
 .icon-1.a {
-  transform: rotate(40deg); }
+  transform: rotate(45deg); }
 
 .icon-3.b {
-  transform: rotate(-40deg); }
+  transform: rotate(-45deg); }
 
 .icon-2.c {
   opacity: 0; }

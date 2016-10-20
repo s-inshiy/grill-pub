@@ -110,6 +110,14 @@
 		this.ctrlNext.addEventListener( 'click', function() { self._navigate( 'next' ); } );
 		this.ctrlClose.addEventListener( 'click', function() { self._closeSlideshow(); } );
 
+		 $('.slideshow')
+			.on("swiperight",function(){
+				self._navigate( 'prev' ); 
+			})
+			.on("swipeleft", function() {
+				self._navigate( 'next' ); 
+			});
+
 		// window resize
 		window.addEventListener( 'resize', function() { self._resizeHandler(); } );
 

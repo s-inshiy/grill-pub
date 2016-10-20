@@ -54,6 +54,10 @@
       margin-top: 20px;
     }
   }
+  .navbar-default .navbar-nav>li>a {
+    padding: 12px 11px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -81,9 +85,12 @@
     }
   }
   .footer {
-    padding-top: 46px;
+    padding: 46px 0;
     &__prod {
       padding-top: 20px;
+    }
+    &__copy {
+      text-align: left;
     }
   }
   .gpbutton {
@@ -98,8 +105,44 @@
     min-height: 600px;
   }
   .header {
+    min-height: 100px;
+    &__img {
+      height: 80px;
+      margin-top: 10px;
+    }
     &__logo {
-      text-align: center;
+      padding: 10px 0;
+      height: 80px;
     }
   }
+  .slider {
+    &__image {
+      min-height: 370px;
+    }
+    &__caption {
+      min-height: 370px;
+      &:after {
+        content: none;
+      }
+    }
+  }
+  .slideshow figure{
+    border: 10px solid #fff;
+  }
+  .slideshow figcaption h3 {
+    margin-top: 10vh;
+  }
+  .info-keys {
+    left:6px;
+  }
+  .about {
+    padding-top: 80px;
+  }
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+  .gpbutton {
+    padding: 20px 60px;
+  }
+
 }
