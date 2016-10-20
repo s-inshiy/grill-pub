@@ -60,7 +60,13 @@
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:992px) {
+  .slick-slide img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:767px) {
   .gptitle {
     font-size: 60px;
     &--video {
@@ -126,14 +132,14 @@
       }
     }
   }
-  .slideshow figure{
+  .slideshow figure {
     border: 10px solid #fff;
   }
   .slideshow figcaption h3 {
     margin-top: 10vh;
   }
   .info-keys {
-    left:6px;
+    left: 6px;
   }
   .about {
     padding-top: 80px;
@@ -144,5 +150,10 @@
   .gpbutton {
     padding: 20px 60px;
   }
-
+  span.nav-close:before {
+    height: 22px;
+    width: 22px;
+    left: -24px;
+    top: 14px;
+  }
 }

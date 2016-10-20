@@ -21,11 +21,13 @@
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
 
-  <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+  <!--<link rel="stylesheet" type="text/css" href="assets/css/component.css" />-->
 
   <!-- Custom && Media-Screens -->
-  <link rel="stylesheet" href="assets/css/custom.min.css">
-  <link rel="stylesheet" href="assets/css/media-screens.min.css">
+  <!--<link rel="stylesheet" href="assets/css/custom.min.css">
+  <link rel="stylesheet" href="assets/css/media-screens.min.css">-->
+
+  <link rel="stylesheet" href="assets/css/style.min.css">
 
   <script src="assets/js/modernizr.custom.js"></script>
 
@@ -46,13 +48,12 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-2 text-left">
-            <img src="/assets/images/header__logo.png" alt="logo" class="header__img">
+            <img src="/assets/images/header__logo.svg" alt="logo" class="header__img">
           </a>
-          <!--<a href="#" class="header__link hidden-lg hidden-md hidden-sm">Контакты</a>-->
         </div>
         <div class="col-xs-10 text-right">
+          <span class=" gpicon--top hidden-lg hidden-md hidden-sm">Доставка еды</span>
           <a href="tel:8-800-123-45-67" class="gpicon gpicon--tel gpicon--top hidden-lg hidden-md hidden-sm ">8-800-123-45-67</a>
-          <a href="mailto:reception@grillpub.ru" class="gpicon gpicon--mail gpicon--top hidden-lg hidden-md hidden-sm">reception@grillpub.ru</a>
           <nav class="navbar navbar-default hidden-xs">
             <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
@@ -83,6 +84,7 @@
         </div>
       </div>
     </div>
+    <!--Mobile Navigation-->
     <nav class="gpmobile hidden-md hidden-sm hidden-lg">
       <ul class="gpmobile__menu">
         <li><a href="#">Главная</a></li>
@@ -106,8 +108,12 @@
     <div class="slider">
       <div class="slider__image" style="background-image:url(/assets/images/bg--slider.jpg)">
         <div class="slider__caption">
-          <img class="slider__logo hidden-xs" src="/assets/images/slider__logo.png"></img>
-          <a href="#" class="gpbutton">Подробнее</a>
+          <div class="slider__info hidden-sm hidden-md hidden-lg ">
+            <h3 class="slider__title">Grill Pub</h3>
+            <span class="slider__slogan">meat and bear</span>
+          </div>
+          <img class="slider__logo  hidden-xs" src="/assets/images/slider__logo.png"></img>
+          <a href="#" class="gpbutton gpbutton--mobile">Подробнее</a>
         </div>
       </div>
       <div class="slider__image" style="background-image:url(/assets/images/bg--slider.jpg)"></div>
@@ -336,7 +342,9 @@
                 <span class="icon nav-next hidden-xs"></span>
                 <span class="icon nav-close"></span>
               </nav>
-              <div class="info-keys icon">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, repellat?</div>
+              <div class="info-keys icon">
+
+              </div>
             </section>
             <!-- // slideshow -->
           </div>
@@ -515,17 +523,13 @@
   <script src="node_modules/jquery.event.move/js/jquery.event.move.js"></script>
   <script src="node_modules/jquery.event.swipe/js/jquery.event.swipe.js"></script>
 
-
   <!-- Latest compiled and minified JavaScript -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-  <!--<script src="assets/js/masonry.pkgd.min.js"></script>-->
   <script src="assets/js/classie.js"></script>
   <script src="assets/js/cbpGridGallery.js"></script>
-
   <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
-<!--<script src="https://unpkg.com/packery@2.1/dist/packery.pkgd.min.js"></script>-->
 
   <!-- Scripts JS -->
   <script src="assets/js/scripts.js"></script>

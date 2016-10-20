@@ -79,7 +79,11 @@ The `sprites` mixin generates identical output to the CSS template
     padding: 12px 11px;
     font-size: 16px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  .slick-slide img {
+    width: 80%; } }
+
+@media screen and (max-width: 767px) {
   .gptitle {
     font-size: 60px; }
     .gptitle--video {
@@ -133,4 +137,9 @@ The `sprites` mixin generates identical output to the CSS template
   .slick-dotted.slick-slider {
     margin-bottom: 0; }
   .gpbutton {
-    padding: 20px 60px; } }
+    padding: 20px 60px; }
+  span.nav-close:before {
+    height: 22px;
+    width: 22px;
+    left: -24px;
+    top: 14px; } }
