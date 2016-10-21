@@ -946,6 +946,8 @@ button {
       color: #d6b315; }
   .footer__copy {
     text-align: center; }
+  .footer__logo {
+    height: 110px; }
 
 .gpicon {
   display: block;
