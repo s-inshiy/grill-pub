@@ -95,6 +95,19 @@ button {
             @include sprite($icon-sep-wh);
         }
     }
+    &--deliv {
+        padding: 144px 0 36px;
+        &:after {
+            content: '';
+            display: block;
+            margin: 38px auto 0;
+            @include sprite($icon-sep-yl);
+        }
+    }
+    &--popul {
+        font-size: 60px;
+        padding: 96px 0 40px;
+    }
 }
 
 .gpbutton {
@@ -120,6 +133,10 @@ button {
     }
     &--mobile {
         margin: 90px auto 100px;
+    }
+    &--deliv {
+        margin-top: 10px;
+        padding: 20px 60px;
     }
     &:hover,
     &:focus {
@@ -178,6 +195,7 @@ button {
     background-color: $yellow;
     border-radius: 2px;
     border: none;
+    // margin-left: 2px;
     &:before {
         content: none;
     }
@@ -476,6 +494,7 @@ button {
 .slick-next {
     width: 65px;
     height: 65px;
+    top: 46%;
 }
 
 .slick-track {
@@ -927,13 +946,12 @@ span.nav-close:before {
     border: none;
 }
 
-#preloader
-{
-    background-color:#bd9e13; 
-    position:fixed;
-    right:0;
-    top:0;
-    z-index:999999;
+#preloader {
+    background-color: #bd9e13;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999999;
 }
 
 // #status
@@ -948,3 +966,22 @@ span.nav-close:before {
 //     top:50%; /* centers the loading animation vertically one the screen */
 //     width:200px;
 // }
+
+/* -----------------------------------------------------------------------
+    Delivery Template Styles
+--------------------------------------------------------------------------*/
+
+.delivery {
+    background: url(../../assets/images/bg--delivery.jpg) no-repeat center;
+    height: 500px;
+}
+
+
+/* ------------------------------------
+    Meals Styles
+------------------------------------- */
+
+.meals {
+    min-height: 2066px;
+    background-image: url(../../assets/images/pattern__metal.jpg);
+}

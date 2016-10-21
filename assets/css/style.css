@@ -369,6 +369,19 @@ button {
       background-position: -532px -101px;
       width: 360px;
       height: 16px; }
+  .gptitle--deliv {
+    padding: 144px 0 36px; }
+    .gptitle--deliv:after {
+      content: '';
+      display: block;
+      margin: 38px auto 0;
+      background-image: url(../../assets/sprites/sprite.png);
+      background-position: -172px -101px;
+      width: 360px;
+      height: 16px; }
+  .gptitle--popul {
+    font-size: 60px;
+    padding: 96px 0 40px; }
 
 .gpbutton {
   margin: 100px auto;
@@ -391,6 +404,9 @@ button {
     margin-top: 4px; }
   .gpbutton--mobile {
     margin: 90px auto 100px; }
+  .gpbutton--deliv {
+    margin-top: 10px;
+    padding: 20px 60px; }
   .gpbutton:hover, .gpbutton:focus {
     text-decoration: none;
     background-color: #d6b315;
@@ -701,7 +717,8 @@ button {
 .slick-prev,
 .slick-next {
   width: 65px;
-  height: 65px; }
+  height: 65px;
+  top: 46%; }
 
 .slick-track {
   margin-bottom: 50px; }
@@ -1069,6 +1086,20 @@ span.nav-close:before {
   right: 0;
   top: 0;
   z-index: 999999; }
+
+/* -----------------------------------------------------------------------
+    Delivery Template Styles
+--------------------------------------------------------------------------*/
+.delivery {
+  background: url(../../assets/images/bg--delivery.jpg) no-repeat center;
+  height: 500px; }
+
+/* ------------------------------------
+    Meals Styles
+------------------------------------- */
+.meals {
+  min-height: 2066px;
+  background-image: url(../../assets/images/pattern__metal.jpg); }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name

@@ -18,13 +18,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
     crossorigin="anonymous">
   <!--Slick 1.6-->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+  <!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />-->
 
   <!-- Custom Styles-->
   <link rel="stylesheet" href="assets/css/style.min.css">
 
-  <script src="assets/js/modernizr.custom.js"></script>
+  <!--<script src="assets/js/modernizr.custom.js"></script>-->
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -66,10 +66,10 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="#">Главная</a></li>
+                  <li><a href="home.html">Главная</a></li>
                   <li><a href="#">Рестароны</a></li>
                   <li><a href="#">Новости и акции</a></li>
-                  <li><a href="#">Доставка</a></li>
+                  <li class="active"><a href="index.html">Доставка</a></li>
                   <li><a href="#">Контакты</a></li>
                   <li class="active--franch"><a href="#">Франчайзинг</a></li>
                 </ul>
@@ -84,10 +84,10 @@
     <!--Mobile Navigation-->
     <nav class="gpmobile hidden-md hidden-sm hidden-lg">
       <ul class="gpmobile__menu">
-        <li><a href="#">Главная</a></li>
+        <li><a href="home.html">Главная</a></li>
         <li><a href="#">Рестароны</a></li>
         <li><a href="#">Новости и акции</a></li>
-        <li><a href="#">Доставка</a></li>
+        <li><a href="index.html">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
         <li><a href="#">Франчайзинг</a></li>
       </ul>
@@ -98,387 +98,27 @@
       </button>
     </nav>
   </header>
-  <!-- ------------------------------------
-    Restornats&Slider 
+<!-- ------------------------------------
+    Delivery
 ------------------------------------ -->
-  <section class="restaurants">
-    <div class="slider">
-      <div class="slider__image" style="background-image:url(assets/images/bg--slider.jpg)">
-        <div class="slider__caption">
-          <div class="slider__info hidden-sm hidden-md hidden-lg ">
-            <h3 class="slider__title">Grill Pub</h3>
-            <span class="slider__slogan">meat and bear</span>
-          </div>
-          <img class="slider__logo  hidden-xs" src="assets/images/slider__logo.png"></img>
-          <a href="#" class="gpbutton gpbutton--mobile">Подробнее</a>
-        </div>
-      </div>
-      <div class="slider__image" style="background-image:url(assets/images/bg--slider.jpg)"></div>
-    </div>
-    </div>
-  </section>
-  <!-- ------------------------------------
-    About
------------------------------------- -->
-  <section class="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <a href="#">
-            <img src="assets/images/about.jpg" alt="#" class="gpimage">
-          </a>
-        </div>
-        <div class="col-md-7">
-          <h3 class="gptitle gptitle--about">О нас</h3>
-          <p class="about__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam maxime, eveniet. Reprehenderit at aliquam numquam
-            repellendus earum natus impedit rerum error non vel porro deserunt eaque in minus, neque sit iure tenetur quibusdam
-            dignissimos doloremque explicabo facilis cum totam. Nesciunt vitae id commodi porro aperiam fuga blanditiis sequi.
-            Velit rerum minus neque enim est fuga, harum quo dignissimos magnam, !</p>
-          <a href="#" class="about__link">Подробнее</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ------------------------------------
-    Location&Map
------------------------------------- -->
-  <section class="location" style="background-image:url(assets/images/map.jpg)">
-
-  </section>
-  <!-- ------------------------------------
-    Menu
------------------------------------- -->
-  <section class="menu" style="background-image:url(assets/images/bg--wood.jpg)">
-    <h3 class="gptitle gptitle--menu">
-      Наше меню
+<section class="delivery text-center">
+  <h3 class="gptitle gptitle--deliv">
+      Доставка еды из нашего ресторана
     </h3>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-lg-4">
-          <div class="menu__item">
-            <a href="#">
-              <img src="assets/images/menu__item--0.jpg" alt="#" class="gpimage">
-            </a>
-            <h3 class="menu__title">Меню завтраков</h3>
-            <p class="menu__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laboriosam similique animi delectus,!</p>
-            <a href="#" class="menu__link"></a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="menu__item">
-            <a href="#">
-              <img src="assets/images/menu__item--1.jpg" alt="#" class="gpimage">
-            </a>
-            <h3 class="menu__title">Основное меню</h3>
-            <p class="menu__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laboriosam similique animi delectus,!</p>
-            <a href="#" class="menu__link"></a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="menu__item">
-            <a href="#">
-              <img src="assets/images/menu__item--2.jpg" alt="#" class="gpimage">
-            </a>
-            <h3 class="menu__title">Напитки</h3>
-            <p class="menu__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laboriosam similique animi delectus,!</p>
-            <a href="#" class="menu__link"></a>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="gpbutton gpbutton--menu ">Все меню</a>
-    </div>
-  </section>
-  <!-- ------------------------------------
-    Video
+    <a href="#" class="gpbutton gpbutton--deliv">Cмотреть меню</a>
+</section>
+<!-- ------------------------------------
+    Meals
 ------------------------------------ -->
-  <section class="video">
-    <h3 class="gptitle gptitle--video">
-      Посмотрите видео о нас
-    </h3>
-    <video controls  played class="video__main">
-      <source src="assets/images/video.mp4" type="video/mp4">
-    </video>
-  </section>
-  <!-- ------------------------------------
-    Gallery
------------------------------------- -->
-  <section class="gallery" style="background-image:url(assets/images/bg--wood.jpg)">
-    <h3 class="gptitle gptitle--video">
-      Фотогалерея
-    </h3>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="grid-gallery" class="grid-gallery">
-            <section class="grid-wrap">
-              <ul class="grid">
-                <li class="grid-sizer"></li>
-                <!-- for Masonry column width -->
-                <li>
-                  <figure class="grid__item">
-                    <img src="assets/images/gallery__item--0.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/images/gallery__item--1.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/images/gallery__item--2.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/images/gallery__item--6.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/images/gallery__item--4.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/images/gallery__item--5.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/images/gallery__item--7.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img src="assets/images/gallery__item--8.jpg" alt="img" />
-                  </figure>
-                </li>
-              </ul>
-            </section>
-            <!-- // grid-wrap -->
-            <section class="slideshow">
-              <ul>
-                <li>
-                  <figure>
-                    <figcaption>
-                      <h3>Letterpress asymmetrical</h3>
-                      <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat
-                        delectus. .</p>
-                    </figcaption>
-                    <img src="assets/images/gallery__item--0.jpg" class="gpgallery--0" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <figcaption>
-                      <h3>Vice velit chia</h3>
-                      <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over.</p>
-                    </figcaption>
-                    <img src="assets/images/gallery__item--1.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <figcaption>
-                      <h3>Vice velit chia</h3>
-                      <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over.</p>
-                    </figcaption>
-                    <img src="assets/images/gallery__item--2.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <figcaption>
-                      <h3>Vice velit chia</h3>
-                      <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over.</p>
-                    </figcaption>
-                    <img src="assets/images/gallery__item--3.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <figcaption>
-                      <h3>Vice velit chia</h3>
-                      <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over.</p>
-                    </figcaption>
-                    <img src="assets/images/gallery__item--4.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <figcaption>
-                      <h3>Vice velit chia</h3>
-                      <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. </p>
-                    </figcaption>
-                    <img src="assets/images/gallery__item--5.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <figcaption>
-                      <h3>Vice velit chia</h3>
-                      <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over.</p>
-                    </figcaption>
-                    <img src="assets/images/gallery__item--6.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <figcaption>
-                      <h3>Vice velit chia</h3>
-                      <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over.</p>
-                    </figcaption>
-                    <img src="assets/images/gallery__item--7.jpg" alt="img" />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <figcaption>
-                      <h3>Vice velit chia</h3>
-                      <p>Chillwave Echo Park Etsy organic Cosby sweater seitan authentic pour-over. </p>
-                    </figcaption>
-                    <img src="assets/images/gallery__item--8.jpg" alt="img" />
-                  </figure>
-                </li>
-              </ul>
-              <nav>
-                <span class="icon nav-prev hidden-xs"></span>
-                <span class="icon nav-next hidden-xs"></span>
-                <span class="icon nav-close"></span>
-              </nav>
-              <div class="info-keys icon">
-
-              </div>
-            </section>
-            <!-- // slideshow -->
-          </div>
-          <!-- // grid-gallery -->
-        </div>
+<section class="meals">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="gptitle gptitle--popul">Популярные блюда</h3>
       </div>
     </div>
-  </section>
-  <!-- ------------------------------------
-    Team
------------------------------------- -->
-  <section class="team">
-    <h3 class="gptitle gptitle--team">
-      Наша команда
-    </h3>
-    <div class="container">
-      <div class="team__slider ">
-        <div class="team__item">
-          <div class="team__img" style="background-image:url(assets/images/team__item--0.png)"></div>
-          <h3 class="team__title">Иван Иванов</h3>
-          <span class="team__pos">Chief</span>
-        </div>
-        <div class="team__item">
-          <div class="team__img" style="background-image:url(assets/images/team__item--1.png)"></div>
-          <h3 class="team__title">Фёдор Добровольский</h3>
-          <span class="team__pos">Poissonnier Sous Chief</span>
-        </div>
-        <div class="team__item">
-          <div class="team__img" style="background-image:url(assets/images/team__item--2.png)"></div>
-          <h3 class="team__title">Арианна Гранде</h3>
-          <span class="team__pos">Saucier Sous Chief</span>
-        </div>
-        <div class="team__item">
-          <div class="team__img" style="background-image:url(assets/images/team__item--3.png)"></div>
-          <h3 class="team__title">Людмила Буйнова</h3>
-          <span class="team__pos">Dessert Sous Chief</span>
-        </div>
-        <div class="team__item">
-          <div class="team__img" style="background-image:url(assets/images/team__item--2.png)"></div>
-          <h3 class="team__title">Иван Иванов</h3>
-          <span class="team__pos">Chief</span>
-        </div>
-        <div class="team__item">
-          <div class="team__img" style="background-image:url(assets/images/team__item--1.png)"></div>
-          <h3 class="team__title">Иван Иванов</h3>
-          <span class="team__pos">Chief</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ------------------------------------
-    News
------------------------------------- -->
-  <section class="news">
-    <h3 class="gptitle gptitle--video">Последние новости</h3>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#">
-                <img src="assets/images/news__item--0.jpg" alt="" class="news__img gpimage">
-              </a>
-            </div>
-            <div class="col-md-6">
-              <h3 class="news__title">Our Prestigious Awards</h3>
-              <time datetime="2016-09-26" class="news__time">26.09.2016</time>
-              <p class="news__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed numquam sunt amet iure consectetur, illo, excepturi
-                dolore ut repellendus ipsum sequi consequatur !</p>
-              <a href="#" class="news__info news__info--more">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#">
-                <img src="assets/images/news__item--1.jpg" alt="" class="news__img gpimage">
-              </a>
-            </div>
-            <div class="col-md-6">
-              <h3 class="news__title">Our Prestigious Awards</h3>
-              <time datetime="2016-09-26" class="news__time">26.09.2016</time>
-              <p class="news__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed numquam sunt amet iure consectetur, illo, excepturi
-                dolore ut repellendus ipsum sequi consequatur !</p>
-              <a href="#" class="news__info news__info--more">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#">
-                <img src="assets/images/news__item--2.jpg" alt="" class="news__img gpimage">
-              </a>
-            </div>
-            <div class="col-md-6">
-              <h3 class="news__title">Our Prestigious Awards</h3>
-              <time datetime="2016-09-26" class="news__time">26.09.2016</time>
-              <p class="news__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed numquam sunt amet iure consectetur, illo, excepturi
-                dolore ut repellendus ipsum sequi consequatur !</p>
-              <a href="#" class="news__info news__info--more">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-6">
-              <a href="#">
-              <img src="assets/images/news__item--3.jpg" alt="" class="news__img gpimage">
-              </a>
-            </div>
-            <div class="col-md-6">
-              <h3 class="news__title">Our Prestigious Awards</h3>
-              <time datetime="2016-09-26" class="news__time">26.09.2016</time>
-              <p class="news__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed numquam sunt amet iure consectetur, illo, excepturi
-                dolore ut repellendus ipsum sequi consequatur !</p>
-              <a href="#" class="news__info news__info--more">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <a href="#" class="gpbutton gpbutton--news ">Все новости</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
   <!-- ------------------------------------
     Footer
 ------------------------------------ -->
@@ -489,7 +129,7 @@
           <div class="row">
             <div class="col-md-3 hidden-xs hidden-sm">
               <a href="#">
-                <img src="assets/images/header__logo.svg" alt="logo"  class="footer__logo">
+                <img src="assets/images/header__logo.svg" alt="logo" class="footer__logo">
               </a>
             </div>
             <div class="col-md-9">
@@ -538,16 +178,16 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
-  <script src="assets/js/jquery.event.move.js"></script>
+  <!--<script src="assets/js/jquery.event.move.js"></script>
   <script src="assets/js/jquery.event.swipe.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
   <script src="assets/js/imagesloaded.pkgd.min.js"></script>
   <script src="assets/js/classie.js"></script>
-  <script src="assets/js/cbpGridGallery.js"></script>
+  <script src="assets/js/cbpGridGallery.js"></script>-->
 
   <!-- Custom JS -->
-  <script src="assets/js/scripts.min.js"></script>
+  <!--<script src="assets/js/scripts.min.js"></script>-->
 
 </body>
 
