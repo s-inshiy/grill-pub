@@ -106,7 +106,33 @@ button {
     }
     &--popul {
         font-size: 60px;
-        padding: 96px 0 40px;
+        margin: 96px 0 66px;
+        position: relative;
+        // max-width: 100%;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            top:26px;
+            right: 0;
+            height: 1px;
+            background: $yellow;
+        }
+    }
+    &--salad {
+        font-size: 60px;
+        margin: 20px 0 66px;
+        position: relative;
+        // max-width: 100%;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 80%;
+            top:26px;
+            right: 0;
+            height: 1px;
+            background: $yellow;
+        }
     }
 }
 
@@ -127,6 +153,11 @@ button {
     outline-offset: -6px;
     &--menu {
         margin-top: 74px;
+    }
+    &--meal {
+        margin: 0;
+        padding: 20px 44px;
+        float: right;
     }
     &--news {
         margin-top: 4px;
@@ -976,7 +1007,6 @@ span.nav-close:before {
     height: 500px;
 }
 
-
 /* ------------------------------------
     Meals Styles
 ------------------------------------- */
@@ -984,4 +1014,48 @@ span.nav-close:before {
 .meals {
     min-height: 2066px;
     background-image: url(../../assets/images/pattern__metal.jpg);
+    padding-bottom: 80px;
+}
+
+.meal {
+    background-color: #fff;
+    // min-height: 534px;
+    margin-bottom: 36px;
+    overflow: hidden;
+    &__title {
+        font-family: 'Acrobat Bold', sans-serif;
+        font-size: 26px;
+        color: #333;
+        margin:4px  0 10px;
+        display: inline-block;
+        span {
+           font-family: 'Open Sans', sans-serif; 
+           font-size: 20px;   
+           color: #888;
+           display: inline-block;
+           margin-left: 20px;
+        }
+    }
+    &__info {
+        padding: 0px 30px 20px;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 257px;
+                max-height: 257px;
+        overflow: hidden;
+    }
+    &__price {
+        font-family: 'Acrobat Bold', sans-serif;
+        font-size: 36px;
+    }
+    &__desc {
+        margin-bottom: 36px;
+        color: #888;
+    }
+    // &__img {
+    //     min-height: 277px;
+    //     width: 100%;
+    // }
 }

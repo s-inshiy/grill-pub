@@ -94,9 +94,20 @@ The `sprites` mixin generates identical output to the CSS template
       .gptitle--video::after {
         content: none; }
     .gptitle--team {
-      padding-top: 70kpx; }
+      padding-top: 70px; }
       .gptitle--team::after {
         content: none; }
+    .gptitle--deliv {
+      padding: 74px 0 36px; }
+      .gptitle--deliv::after {
+        content: none; }
+    .gptitle--popul {
+      margin-top: 40px;
+      margin-bottom: 50px; }
+      .gptitle--popul::after {
+        content: none; }
+    .gptitle--salad::after {
+      content: none; }
   .video {
     min-height: 580px; }
     .video__main {
@@ -142,8 +153,31 @@ The `sprites` mixin generates identical output to the CSS template
     padding: 20px 60px; }
     .gpbutton--mobile {
       margin: 40px auto 100px; }
+    .gpbutton--meal {
+      float: none; }
   span.nav-close:before {
     height: 22px;
     width: 22px;
     left: -24px;
-    top: 14px; } }
+    top: 14px; }
+  /* -----------------------------------------------------------------------
+    Delivery Template Styles
+--------------------------------------------------------------------------*/
+  .meal__info {
+    max-height: 600px;
+    padding-bottom: 50px; }
+  .meal__title {
+    margin-top: 20px; }
+    .meal__title span {
+      display: block;
+      margin-left: 0;
+      margin-top: 10px; }
+  .meal__price {
+    margin: 0 0 20px;
+    float: left; }
+  .meal__desc {
+    margin-bottom: 10px; }
+  .meal__order {
+    text-align: center; }
+  .delivery {
+    height: 400px; } }

@@ -82,7 +82,25 @@
       }
     }
     &--team {
-      padding-top: 70kpx;
+      padding-top: 70px;
+      &::after {
+        content: none;
+      }
+    }
+    &--deliv {
+      padding: 74px 0 36px;
+      &::after {
+        content: none;
+      }
+    }
+    &--popul {
+      margin-top: 40px;
+      margin-bottom: 50px;
+      &::after {
+        content: none;
+      }
+    }
+    &--salad {
       &::after {
         content: none;
       }
@@ -154,8 +172,12 @@
   }
   .gpbutton {
     padding: 20px 60px;
-        &--mobile {
-        margin: 40px auto 100px;
+    &--mobile {
+      margin: 40px auto 100px;
+    }
+    &--meal {
+      // display: block;
+      float: none;
     }
   }
   span.nav-close:before {
@@ -163,5 +185,35 @@
     width: 22px;
     left: -24px;
     top: 14px;
+  }
+  /* -----------------------------------------------------------------------
+    Delivery Template Styles
+--------------------------------------------------------------------------*/
+  .meal {
+    &__info {
+      max-height: 600px;
+      padding-bottom: 50px;
+    }
+    &__title {
+      margin-top: 20px;
+      span {
+        display: block;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+    &__price {
+      margin: 0 0 20px;
+      float: left;
+    }
+    &__desc {
+      margin-bottom: 10px;
+    }
+    &__order {
+      text-align: center;
+    }
+  }
+  .delivery {
+    height: 400px;
   }
 }

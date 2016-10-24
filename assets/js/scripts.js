@@ -18,7 +18,7 @@ $(document).ready(function () {
     }]
   });
 
-  $('.team__slider').slick({
+    $('.team__slider').slick({
     dots: false,
     infinite: true,
     arrows: true,
@@ -51,7 +51,7 @@ $(document).ready(function () {
       }
     }]
   });
-
+  
   new CBPGridGallery(document.getElementById('grid-gallery'));
 
   //Mobile Menu 

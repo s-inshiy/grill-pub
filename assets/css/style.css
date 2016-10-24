@@ -381,7 +381,28 @@ button {
       height: 16px; }
   .gptitle--popul {
     font-size: 60px;
-    padding: 96px 0 40px; }
+    margin: 96px 0 66px;
+    position: relative; }
+    .gptitle--popul:after {
+      content: '';
+      position: absolute;
+      width: 60%;
+      top: 26px;
+      right: 0;
+      height: 1px;
+      background: #bd9e13; }
+  .gptitle--salad {
+    font-size: 60px;
+    margin: 20px 0 66px;
+    position: relative; }
+    .gptitle--salad:after {
+      content: '';
+      position: absolute;
+      width: 80%;
+      top: 26px;
+      right: 0;
+      height: 1px;
+      background: #bd9e13; }
 
 .gpbutton {
   margin: 100px auto;
@@ -400,6 +421,10 @@ button {
   outline-offset: -6px; }
   .gpbutton--menu {
     margin-top: 74px; }
+  .gpbutton--meal {
+    margin: 0;
+    padding: 20px 44px;
+    float: right; }
   .gpbutton--news {
     margin-top: 4px; }
   .gpbutton--mobile {
@@ -1099,7 +1124,43 @@ span.nav-close:before {
 ------------------------------------- */
 .meals {
   min-height: 2066px;
-  background-image: url(../../assets/images/pattern__metal.jpg); }
+  background-image: url(../../assets/images/pattern__metal.jpg);
+  padding-bottom: 80px; }
+
+.meal {
+  background-color: #fff;
+  margin-bottom: 36px;
+  overflow: hidden; }
+  .meal__title {
+    font-family: 'Acrobat Bold', sans-serif;
+    font-size: 26px;
+    color: #333;
+    margin: 4px  0 10px;
+    display: inline-block; }
+    .meal__title span {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      color: #888;
+      display: inline-block;
+      margin-left: 20px; }
+  .meal__info {
+    padding: 0px 30px 20px;
+    font-family: 'Open Sans', sans-serif;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    min-height: 257px;
+    max-height: 257px;
+    overflow: hidden; }
+  .meal__price {
+    font-family: 'Acrobat Bold', sans-serif;
+    font-size: 36px; }
+  .meal__desc {
+    margin-bottom: 36px;
+    color: #888; }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -1197,9 +1258,20 @@ The `sprites` mixin generates identical output to the CSS template
       .gptitle--video::after {
         content: none; }
     .gptitle--team {
-      padding-top: 70kpx; }
+      padding-top: 70px; }
       .gptitle--team::after {
         content: none; }
+    .gptitle--deliv {
+      padding: 74px 0 36px; }
+      .gptitle--deliv::after {
+        content: none; }
+    .gptitle--popul {
+      margin-top: 40px;
+      margin-bottom: 50px; }
+      .gptitle--popul::after {
+        content: none; }
+    .gptitle--salad::after {
+      content: none; }
   .video {
     min-height: 580px; }
     .video__main {
@@ -1245,8 +1317,31 @@ The `sprites` mixin generates identical output to the CSS template
     padding: 20px 60px; }
     .gpbutton--mobile {
       margin: 40px auto 100px; }
+    .gpbutton--meal {
+      float: none; }
   span.nav-close:before {
     height: 22px;
     width: 22px;
     left: -24px;
-    top: 14px; } }
+    top: 14px; }
+  /* -----------------------------------------------------------------------
+    Delivery Template Styles
+--------------------------------------------------------------------------*/
+  .meal__info {
+    max-height: 600px;
+    padding-bottom: 50px; }
+  .meal__title {
+    margin-top: 20px; }
+    .meal__title span {
+      display: block;
+      margin-left: 0;
+      margin-top: 10px; }
+  .meal__price {
+    margin: 0 0 20px;
+    float: left; }
+  .meal__desc {
+    margin-bottom: 10px; }
+  .meal__order {
+    text-align: center; }
+  .delivery {
+    height: 400px; } }
