@@ -1,58 +1,63 @@
 $(document).ready(function () {
 
-  $('.slider').slick({
-    dots: false,
-    arrows: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        infinite: true,
-        dots: true,
-      }
-    }]
-  });
+  // var body = $('body');
 
+  if (document.querySelector('.home')) {
+    // Main Slider
+    $('.slider').slick({
+      dots: false,
+      arrows: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          infinite: true,
+          dots: true,
+        }
+      }]
+    });
+    // Team Slider
     $('.team__slider').slick({
-    dots: false,
-    infinite: true,
-    arrows: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    prevArrow: '<button type="button" class="slick-prev slick-prev--team">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next slick-next--team">Previous</button>',
-    appendArrows: $('.team'),
-    responsive: [{
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-      }
-    }, {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: true,
-      }
-    }, {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        infinite: true,
-      }
-    }]
-  });
-  
-  new CBPGridGallery(document.getElementById('grid-gallery'));
+      dots: false,
+      infinite: true,
+      arrows: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      prevArrow: '<button type="button" class="slick-prev slick-prev--team">Previous</button>',
+      nextArrow: '<button type="button" class="slick-next slick-next--team">Previous</button>',
+      appendArrows: $('.team'),
+      responsive: [{
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        }
+      }, {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        }
+      }, {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          infinite: true,
+        }
+      }]
+    });
+    // Main Gallery
+    new CBPGridGallery(document.getElementById('grid-gallery'));
+  }
 
   //Mobile Menu 
   var button = document.querySelector('.gpmobile__toggle'),
@@ -76,11 +81,12 @@ $(document).ready(function () {
 
 });
 
-  jQuery(window).load(function () { // makes sure the whole site is loaded
-    var body = jQuery('body');
-    jQuery('#status').fadeOut(); // will first fade out the loading animation
-    jQuery('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-    body.delay(350).css({
-      'overflow': 'visible'
-    });
+// Preloader
+jQuery(window).load(function () { // makes sure the whole site is loaded
+  var body = jQuery('body');
+  jQuery('#status').fadeOut(); // will first fade out the loading animation
+  jQuery('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+  body.delay(350).css({
+    'overflow': 'visible'
   });
+});

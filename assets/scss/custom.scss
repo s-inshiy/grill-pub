@@ -40,6 +40,17 @@ body {
     min-width: 320px;
 }
 
+ol, ul {
+	list-style: none;
+}
+
+a {
+    transition: all .3s ease;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 button {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1048,7 +1059,7 @@ span.nav-close:before {
     }
     &__price {
         font-family: 'Acrobat Bold', sans-serif;
-        font-size: 36px;
+        font-size: 24px;
     }
     &__desc {
         margin-bottom: 36px;

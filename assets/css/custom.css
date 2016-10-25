@@ -73,6 +73,14 @@ body {
 body {
   min-width: 320px; }
 
+ol, ul {
+  list-style: none; }
+
+a {
+  transition: all .3s ease; }
+  a:hover {
+    text-decoration: none; }
+
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -915,7 +923,7 @@ span.nav-close:before {
     overflow: hidden; }
   .meal__price {
     font-family: 'Acrobat Bold', sans-serif;
-    font-size: 36px; }
+    font-size: 24px; }
   .meal__desc {
     margin-bottom: 36px;
     color: #888; }

@@ -83,7 +83,14 @@ The `sprites` mixin generates identical output to the CSS template
 
 @media screen and (max-width: 992px) {
   .slick-slide img {
-    width: 80%; } }
+    width: 80%; }
+  .gptitle--popul {
+    margin-top: 40px;
+    margin-bottom: 50px; }
+    .gptitle--popul::after {
+      content: none; }
+  .gptitle--salad::after {
+    content: none; } }
 
 @media screen and (max-width: 767px) {
   .gptitle {
