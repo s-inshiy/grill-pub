@@ -52,7 +52,7 @@ The `sprites` mixin generates identical output to the CSS template
   src: url("../../assets/fonts/Akrobatsemibold.woff"); }
 
 @font-face {
-  font-family: 'Acrobat-Light';
+  font-family: 'Acrobat Light';
   src: url("../../assets/fonts/Akrobatlight.woff"); }
 
 @font-face {
@@ -96,7 +96,7 @@ button {
 ------------------------------------- */
 .gptitle {
   color: #fff;
-  font-family: 'Acrobat-Light', sans-serif;
+  font-family: 'Acrobat Light', sans-serif;
   font-size: 80px;
   line-height: 0.7;
   margin-top: 0; }
@@ -190,14 +190,21 @@ button {
   .gpbutton--meal {
     margin: 0;
     padding: 20px 44px;
-    float: right; }
+    float: right;
+    font-size: 17px; }
   .gpbutton--news {
     margin-top: 4px; }
   .gpbutton--mobile {
     margin: 90px auto 100px; }
   .gpbutton--deliv {
     margin-top: 10px;
-    padding: 20px 60px; }
+    padding: 20px 60px;
+    font-size: 17px; }
+  .gpbutton--shares {
+    margin-top: 24px;
+    margin-bottom: 0;
+    padding: 20px 36px;
+    font-size: 17px; }
   .gpbutton:hover, .gpbutton:focus {
     text-decoration: none;
     background-color: #d6b315;
@@ -464,13 +471,13 @@ button {
 
 .slider__title {
   font-size: 60px;
-  font-family: 'Acrobat-Light', sans-serif;
+  font-family: 'Acrobat Light', sans-serif;
   text-transform: uppercase;
   margin-bottom: 0; }
 
 .slider__slogan {
   font-size: 40px;
-  font-family: 'Acrobat-Light', sans-serif; }
+  font-family: 'Acrobat Light', sans-serif; }
 
 .slick-prev {
   left: 25px;
@@ -884,6 +891,8 @@ span.nav-close:before {
 .delivery {
   background: url(../../assets/images/bg--delivery.jpg) no-repeat center;
   height: 500px; }
+  .delivery--new {
+    background: url(../../assets/images/bg--news.jpg) no-repeat center; }
 
 /* ------------------------------------
     Meals Styles
@@ -927,3 +936,27 @@ span.nav-close:before {
   .meal__desc {
     margin-bottom: 36px;
     color: #888; }
+
+/* -----------------------------------------------------------------------
+    Shares Template Styles
+--------------------------------------------------------------------------*/
+.shares {
+  min-height: 1690px;
+  background-image: url(../../assets/images/pattern__metal.jpg);
+  padding-top: 100px; }
+  .shares__title {
+    font-family: 'Acrobat Light', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 16px;
+    margin-top: 0; }
+  .shares__time {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #bd9e13;
+    display: inline-block;
+    margin-bottom: 18px; }
+  .shares__excerpt {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.7; }

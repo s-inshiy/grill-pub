@@ -18,8 +18,6 @@
   <!-- Custom Styles-->
   <link rel="stylesheet" href="assets/css/style.min.css">
 
-  <!--<script src="assets/js/modernizr.custom.js"></script>-->
-
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -62,8 +60,8 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="home.html">Главная</a></li>
                   <li><a href="#">Рестароны</a></li>
-                  <li><a href="#">Новости и акции</a></li>
-                  <li class="active"><a href="index.html">Доставка</a></li>
+                  <li class="active"><a href="index.html" class="active">Новости и акции</a></li>
+                  <li ><a href="delivery.html">Доставка</a></li>
                   <li><a href="#">Контакты</a></li>
                   <li class="active--franch"><a href="#">Франчайзинг</a></li>
                 </ul>
@@ -80,8 +78,8 @@
       <ul class="gpmobile__menu">
         <li><a href="home.html">Главная</a></li>
         <li><a href="#">Рестароны</a></li>
-        <li><a href="#">Новости и акции</a></li>
-        <li><a href="index.html">Доставка</a></li>
+        <li><a href="index.html">Новости и акции</a></li>
+        <li><a href="delivery.html">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
         <li><a href="#">Франчайзинг</a></li>
       </ul>
@@ -93,188 +91,48 @@
     </nav>
   </header>
   <!-- ------------------------------------
-    Delivery
+    News
 ------------------------------------ -->
-  <section class="delivery text-center">
+  <section class="delivery delivery--new text-center">
     <h3 class="gptitle gptitle--deliv">
-      Доставка еды из нашего ресторана
+      Новости и Акции
     </h3>
-    <a href="#" class="gpbutton gpbutton--deliv">Cмотреть меню</a>
   </section>
-  <!-- ------------------------------------
-    Meals
------------------------------------- -->
-  <section class="meals">
+
+  <section class="shares">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h3 class="gptitle gptitle--popul">Популярные блюда</h3>
+        <div class="col-md-6">
+          <a href="#0">
+            <img src="assets/images/news__item--5.jpg" alt="#" class="gpimage">
+          </a>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="meal">
-            <a href="#">
-              <img src="/assets/images/meals__item--0.jpg" alt="" class="meal__img gpimage">
-            </a>
-            <div class="meal__info">
-              <h3 class="meal__title">Стейк "Филе миньон" <span>280г</span></h3>
-              <p class="meal__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, id repellat aspernatur eos
-                perferendis.
-              </p>
-              <div class="meal__order">
-                <span class="meal__price"> 265 грн</span>
-                <a class="gpbutton gpbutton--meal cd-add-to-cart" data-price="265">Заказать</a>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-6">
+          <h3 class="shares__title">Halloween Dinner: Orange, Meaty and Tasty!</h3>
+          <time class="shares__time" datetime="26-10-2016">26.10.2016</time>
+          <p class="shares__excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, explicabo velit
+             praesentium asperiores aliquid voluptatum architecto officia, omnis quisquam 
+             odit quis dolorum, laborum reprehenderit. Adipisci laudantium sapiente in at natus ...
+          </p>
+          <a href="#0" class="gpbutton gpbutton--shares">Узнать больше</a>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="meal">
-            <a href="#">
-              <img src="/assets/images/meals__item--1.jpg" alt="" class="meal__img gpimage">
-            </a>
-            <div class="meal__info">
-              <h3 class="meal__title">Lorem ipsum dolor sit amet, consectetur. <span>280г</span></h3>
-              <p class="meal__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, id repellat aspernatur eos
-                perferendis.
-              </p>
-              <div class="meal__order">
-                <span class="meal__price">257.99 грн</span>
-                <a href="#0" class="gpbutton gpbutton--meal cd-add-to-cart" data-price="257.99">Заказать</a>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-6">
+
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="meal">
-            <a href="#">
-              <img src="/assets/images/meals__item--2.jpg" alt="" class="meal__img gpimage">
-            </a>
-            <div class="meal__info">
-              <h3 class="meal__title">Стейк "Филе миньон"<span> 280г</span></h3>
-              <p class="meal__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, id repellat aspernatur eos
-                perferendis.
-              </p>
-              <div class="meal__order">
-                <span class="meal__price">258.99 грн</span>
-                <a href="#0" class="gpbutton gpbutton--meal cd-add-to-cart" data-price="258.99">Заказать</a>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-6">
+
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="meal">
-            <a href="#">
-              <img src="/assets/images/meals__item--3.jpg" alt="" class="meal__img gpimage">
-            </a>
-            <div class="meal__info">
-              <h3 class="meal__title">Стейк "Филе миньон"<span> 280г</span></h3>
-              <p class="meal__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, id repellat aspernatur eos
-                perferendis.
-              </p>
-              <div class="meal__order">
-                <span class="meal__price">259.99 грн</span>
-                <a href="#0" class="gpbutton gpbutton--meal cd-add-to-cart" data-price="259.99">Заказать</a>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-6">
+
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="meal">
-            <a href="#">
-              <img src="/assets/images/meals__item--4.jpg" alt="" class="meal__img gpimage">
-            </a>
-            <div class="meal__info">
-              <h3 class="meal__title">Стейк "Филе миньон"<span> 280г</span></h3>
-              <p class="meal__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, id repellat aspernatur eos
-                perferendis.
-              </p>
-              <div class="meal__order">
-                <span class="meal__price">206.99 грн</span>
-                <a href="#0" class="gpbutton gpbutton--meal cd-add-to-cart" data-price="206.99">Заказать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="meal">
-            <a href="#">
-              <img src="/assets/images/meals__item--5.jpg" alt="" class="meal__img gpimage">
-            </a>
-            <div class="meal__info">
-              <h3 class="meal__title">Стейк "Филе миньон"<span> 280г</span></h3>
-              <p class="meal__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, id repellat aspernatur eos
-                perferendis.
-              </p>
-              <div class="meal__order">
-                <span class="meal__price">218.99 грн</span>
-                <a href="#0" class="gpbutton gpbutton--meal cd-add-to-cart" data-price="218.99">Заказать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="gptitle gptitle--salad">Салаты</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="meal">
-            <a href="#">
-              <img src="/assets/images/meals__item--0.jpg" alt="" class="meal__img gpimage">
-            </a>
-            <div class="meal__info">
-              <h3 class="meal__title">Стейк "Филе миньон"<span> 280г</span></h3>
-              <p class="meal__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, id repellat aspernatur eos
-                perferendis.
-              </p>
-              <div class="meal__order">
-                <span class="meal__price">250.9 грн</span>
-                <a href="#0" class="gpbutton gpbutton--meal cd-add-to-cart" data-price="250.99">Заказать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="meal">
-            <a href="#">
-              <img src="/assets/images/meals__item--1.jpg" alt="" class="meal__img gpimage">
-            </a>
-            <div class="meal__info">
-              <h3 class="meal__title">Lorem ipsum dolor sit amet, consectetur.<span> 280г</span></h3>
-              <p class="meal__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, id repellat aspernatur eos
-                perferendis.
-              </p>
-              <div class="meal__order">
-                <span class="meal__price">271.8 грн</span>
-                <a href="#0" class="gpbutton gpbutton--meal cd-add-to-cart" data-price="271.8">Заказать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6">
-          <div class="meal">
-            <a href="#">
-              <img src="/assets/images/meals__item--2.jpg" alt="" class="meal__img gpimage">
-            </a>
-            <div class="meal__info">
-              <h3 class="meal__title">Стейк "Филе миньон"<span> 280г</span></h3>
-              <p class="meal__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, id repellat aspernatur eos
-                perferendis.
-              </p>
-              <div class="meal__order">
-                <span class="meal__price">1250.99 грн</span>
-                <a href="#0" class="gpbutton gpbutton--meal cd-add-to-cart" data-price="1250.99">Заказать</a>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-6">
+
         </div>
       </div>
     </div>
   </section>
+
   <!-- ------------------------------------
     Footer
 ------------------------------------ -->
@@ -325,54 +183,13 @@
       </div>
     </div>
   </footer>
-<!-- ------------------------------------
-    Cart
------------------------------------- -->
-  <div class="cd-cart-container empty">
-    <a href="#0" class="cd-cart-trigger">
-		Корзина
-		<ul class="count"> <!-- cart items count -->
-			<li>0</li>
-			<li>0</li>
-		</ul> <!-- .count -->
-	</a>
-    <div class="cd-cart">
-      <div class="wrapper">
-        <header>
-          <h2>Корзина</h2>
-          <span class="undo">Товар удалён. <a href="#0">Возвратить</a></span>
-        </header>
-        <div class="body">
-          <ul>
-            <!-- products added to the cart will be inserted here using JavaScript -->
-          </ul>
-        </div>
-        <footer>
-          <a href="/home.html" class="checkout"><em>Оформить заказ <span>0</span> грн</em></a>
-        </footer>
-      </div>
-    </div>
-    <!-- .cd-cart -->
-  </div>
-  <!-- cd-cart-container -->
-
-  <!--<script src="node_modules/jquery/dist/jquery.min.js"></script>-->
-  <!--<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
-  <!--<script src="assets/js/jquery.event.move.js"></script>
-  <script src="assets/js/jquery.event.swipe.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-  <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
-  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/js/classie.js"></script>
-  <script src="assets/js/cbpGridGallery.js"></script>-->
 
   <!--Custom JS -->
-  <script src="assets/js/cart.js"></script>
   <script src="assets/js/scripts.js"></script>
 
 </body>

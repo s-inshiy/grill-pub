@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: 'Acrobat-Light';
+    font-family: 'Acrobat Light';
     src: url('../../assets/fonts/Akrobatlight.woff');
 }
 
@@ -69,7 +69,7 @@ button {
 
 .gptitle {
     color: #fff;
-    font-family: 'Acrobat-Light', sans-serif;
+    font-family: 'Acrobat Light', sans-serif;
     font-size: 80px;
     line-height: 0.7;
     margin-top: 0;
@@ -169,6 +169,7 @@ button {
         margin: 0;
         padding: 20px 44px;
         float: right;
+        font-size: 17px;
     }
     &--news {
         margin-top: 4px;
@@ -179,6 +180,13 @@ button {
     &--deliv {
         margin-top: 10px;
         padding: 20px 60px;
+        font-size: 17px;
+    }
+    &--shares {
+        margin-top: 24px;
+        margin-bottom: 0;
+        padding: 20px 36px;
+        font-size: 17px;
     }
     &:hover,
     &:focus {
@@ -495,13 +503,13 @@ button {
     }
     &__title {
         font-size: 60px;
-        font-family: 'Acrobat-Light', sans-serif;
+        font-family: 'Acrobat Light', sans-serif;
         text-transform: uppercase;
         margin-bottom: 0;
     }
     &__slogan {
         font-size: 40px;
-        font-family: 'Acrobat-Light', sans-serif;
+        font-family: 'Acrobat Light', sans-serif;
     }
 }
 
@@ -1016,6 +1024,9 @@ span.nav-close:before {
 .delivery {
     background: url(../../assets/images/bg--delivery.jpg) no-repeat center;
     height: 500px;
+    &--new {
+            background: url(../../assets/images/bg--news.jpg) no-repeat center;
+    }
 }
 
 /* ------------------------------------
@@ -1069,4 +1080,33 @@ span.nav-close:before {
     //     min-height: 277px;
     //     width: 100%;
     // }
+}
+
+/* -----------------------------------------------------------------------
+    Shares Template Styles
+--------------------------------------------------------------------------*/
+
+.shares {
+    min-height: 1690px; 
+    background-image: url(../../assets/images/pattern__metal.jpg);
+    padding-top: 100px;
+    &__title {
+        font-family: 'Acrobat Light', sans-serif;
+        font-size: 40px;
+        color: #fff;
+        margin-bottom: 16px;
+        margin-top: 0;
+    }
+    &__time {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: $yellow;
+        display: inline-block;
+        margin-bottom: 18px;
+    }
+    &__excerpt {
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.7;
+    }
 }
