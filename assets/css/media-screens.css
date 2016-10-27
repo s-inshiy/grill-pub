@@ -55,7 +55,9 @@ The `sprites` mixin generates identical output to the CSS template
     width: 101px;
     height: 101px; }
   .navbar-default .navbar-nav > li > a {
-    padding: 12px 20px; } }
+    padding: 12px 20px; }
+  .gpbutton--shares {
+    margin-top: 10px; } }
 
 @media screen and (max-width: 1024px) {
   .menu__item {
@@ -90,7 +92,9 @@ The `sprites` mixin generates identical output to the CSS template
     .gptitle--popul::after {
       content: none; }
   .gptitle--salad::after {
-    content: none; } }
+    content: none; }
+  .shares__title {
+    margin-top: 20px; } }
 
 @media screen and (max-width: 767px) {
   .gptitle {
@@ -114,6 +118,8 @@ The `sprites` mixin generates identical output to the CSS template
       .gptitle--popul::after {
         content: none; }
     .gptitle--salad::after {
+      content: none; }
+    .gptitle--shares::after {
       content: none; }
   .video {
     min-height: 580px; }
@@ -162,6 +168,8 @@ The `sprites` mixin generates identical output to the CSS template
       margin: 40px auto 100px; }
     .gpbutton--meal {
       float: none; }
+    .gpbutton--shares {
+      padding: 20px 40px; }
   span.nav-close:before {
     height: 22px;
     width: 22px;
@@ -187,4 +195,14 @@ The `sprites` mixin generates identical output to the CSS template
   .meal__order {
     text-align: center; }
   .delivery {
-    height: 400px; } }
+    height: 400px; }
+  /* -----------------------------------------------------------------------
+    Shares Template Styles
+--------------------------------------------------------------------------*/
+  .shares {
+    padding-top: 60px; }
+    .shares__sp::before {
+      left: 10%;
+      width: 80%; }
+  .pagination__item {
+    font-size: 24px; } }
