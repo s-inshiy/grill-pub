@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
 
@@ -139,12 +140,35 @@ button {
       background-position: -532px -101px;
       width: 360px;
       height: 16px; }
+  .gptitle--condi {
+    text-align: center;
+    padding: 120px 0 74px;
+    margin-bottom: 0; }
+    .gptitle--condi:after {
+      content: '';
+      display: block;
+      margin: 24px auto 0;
+      background-image: url(../../assets/sprites/sprite.png);
+      background-position: -532px -101px;
+      width: 360px;
+      height: 16px; }
   .gptitle--deliv {
     padding: 144px 0 36px; }
     .gptitle--deliv:after {
       content: '';
       display: block;
       margin: 38px auto 0;
+      background-image: url(../../assets/sprites/sprite.png);
+      background-position: -172px -101px;
+      width: 360px;
+      height: 16px; }
+  .gptitle--franch {
+    padding: 114px 0 70px;
+    margin-bottom: 0; }
+    .gptitle--franch:after {
+      content: '';
+      display: block;
+      margin: 28px auto 0;
       background-image: url(../../assets/sprites/sprite.png);
       background-position: -172px -101px;
       width: 360px;
@@ -183,6 +207,11 @@ button {
       right: 0;
       height: 1px;
       background: #bd9e13; }
+  .gptitle--callme {
+    font-size: 78px;
+    margin-bottom: 0;
+    padding-top: 114px;
+    padding-bottom: 24px; }
 
 .gpbutton {
   margin: 100px auto;
@@ -226,6 +255,11 @@ button {
     outline-offset: -2px;
     cursor: pointer;
     color: #fff; }
+  .gpbutton--form {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    padding: 26px 92px; }
 
 .gpimage {
   outline: 1px solid rgba(255, 255, 255, 0.5);
@@ -612,6 +646,9 @@ button {
     color: #fff;
     font-size: 30px;
     letter-spacing: 2.4px; }
+    .menu__title--condi {
+      letter-spacing: 2px;
+      margin-top: 44px; }
     .menu__title:after {
       content: '';
       width: 40px;
@@ -1007,6 +1044,157 @@ span.nav-close:before {
     .pagination__item:hover, .pagination__item:active, .pagination__item:focus {
       color: #999; }
 
-.glyphicon-menu-right, .glyphicon-menu-left {
+.glyphicon-menu-right,
+.glyphicon-menu-left {
   font-size: 20px;
   color: #bd9e13; }
+
+/* -----------------------------------------------------------------------
+    Franchise Template Styles
+--------------------------------------------------------------------------*/
+.franch {
+  min-height: 634px;
+  background-image: url(../../assets/images/bg--wood.jpg); }
+  .franch__step {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: #bd9e13;
+    margin: 0 auto 24px;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center; }
+    .franch__step img {
+      margin: 0 auto;
+      height: 42px; }
+  .franch__title {
+    font-family: "Acrobat Bold", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 14px;
+    letter-spacing: 1.8px; }
+  .franch__info {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #fff; }
+
+/* -----------------------------------------------------------------------
+    Pub  Styles
+--------------------------------------------------------------------------*/
+.pub {
+  min-height: 418px;
+  background-image: url(../../assets/images/pattern__metal.jpg); }
+  .pub--bgc {
+    min-height: 296px;
+    margin-top: 60px;
+    background: #1d1d1d url(../../assets/images/franch__logo.svg) no-repeat center;
+    color: #ccc;
+    font-family: "OpenSans Bold", sans-serif;
+    font-size: 18px;
+    padding: 60px 70px;
+    text-align: center;
+    min-height: 294px;
+    outline: 1px solid rgba(189, 158, 19, 0.5);
+    outline-offset: -10px; }
+  .pub__info {
+    text-indent: -10px;
+    line-height: 1.7;
+    padding-bottom: 20px; }
+    .pub__info:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0; }
+    .pub__info b {
+      text-transform: uppercase; }
+
+/* -----------------------------------------------------------------------
+    Сonditions Styles
+--------------------------------------------------------------------------*/
+.conditions {
+  min-height: 1090px;
+  background-color: #bd9e13; }
+  .conditions__card {
+    min-height: 678px;
+    background-color: #1b1b1b; }
+    .conditions__card ul {
+      text-align: left;
+      padding: 16px 40px 0; }
+  .conditions__title {
+    font-family: 'Acrobat Bold', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff; }
+    .conditions__title:before {
+      content: ''; }
+  .conditions__step {
+    font-family: 'Open Sans', sans-serif;
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding-left: 18px;
+    position: relative; }
+    .conditions__step:before {
+      content: '';
+      position: absolute;
+      left: -4px;
+      top: 6px;
+      width: 12px;
+      height: 9px;
+      background: url(../../assets/images/icon__check.svg) no-repeat center; }
+
+/* -----------------------------------------------------------------------
+    Callme Styles
+--------------------------------------------------------------------------*/
+.callme {
+  background-color: #1b1b1b; }
+  .callme--bgc {
+    min-height: 720px;
+    background: url(../../assets/images/bg--callme.jpg) no-repeat; }
+  .callme__title {
+    color: #bd9e13;
+    font-family: 'Acrobat Bold', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    padding-bottom: 20px; }
+  .callme__info {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ccc;
+    padding-top: 24px;
+    margin-bottom: 40px; }
+
+.gpform {
+  width: 70%; }
+  .gpform input {
+    display: block;
+    width: 358px;
+    padding: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    border: 1px solid #bd9e13;
+    background-color: #292929;
+    color: #ccc; }
+
+/* -----------------------------------------------------------------------
+    Expenses Styles
+--------------------------------------------------------------------------*/
+.expenses {
+  min-height: 718px;
+  background-image: url(../../assets/images/bg--wood.jpg);
+  position: relative;
+  text-align: center; }
+  .expenses:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    display: inline-block;
+    width: 100%;
+    height: 23px;
+    background-image: url(../../assets/images/icon__battlements.png);
+    background-repeat: repeat-x; }
