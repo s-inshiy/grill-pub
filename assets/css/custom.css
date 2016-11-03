@@ -173,6 +173,40 @@ button {
       background-position: -172px -101px;
       width: 360px;
       height: 16px; }
+  .gptitle--quest {
+    padding: 120px 0 30px;
+    margin-bottom: 0;
+    color: #333; }
+    .gptitle--quest:after {
+      content: '';
+      display: block;
+      margin: 24px auto 0;
+      background-image: url(../../assets/sprites/sprite.png);
+      background-position: -172px -101px;
+      width: 360px;
+      height: 16px; }
+  .gptitle--advant {
+    padding: 114px 0 136px;
+    margin-bottom: 0; }
+    .gptitle--advant:after {
+      content: '';
+      display: block;
+      margin: 28px auto 0;
+      background-image: url(../../assets/sprites/sprite.png);
+      background-position: -172px -101px;
+      width: 360px;
+      height: 16px; }
+  .gptitle--invest {
+    padding: 114px 0 64px;
+    margin-bottom: 0; }
+    .gptitle--invest:after {
+      content: '';
+      display: block;
+      margin: 28px auto 0;
+      background-image: url(../../assets/sprites/sprite.png);
+      background-position: -172px -101px;
+      width: 360px;
+      height: 16px; }
   .gptitle--shares {
     padding: 144px 0 36px; }
     .gptitle--shares:after {
@@ -212,6 +246,11 @@ button {
     margin-bottom: 0;
     padding-top: 114px;
     padding-bottom: 24px; }
+  .gptitle--payback {
+    font-size: 78px;
+    margin-bottom: 0;
+    padding-top: 58px;
+    padding-bottom: 44px; }
 
 .gpbutton {
   margin: 100px auto;
@@ -638,7 +677,7 @@ button {
     background-image: url(../../assets/images/icon__battlements.png);
     background-repeat: repeat-x; }
   .menu__item {
-    background-color: #1b1b1b;
+    background-color: #1d1d1d;
     padding-bottom: 36px; }
   .menu__title {
     text-transform: uppercase;
@@ -1087,7 +1126,7 @@ span.nav-close:before {
 .pub {
   min-height: 418px;
   background-image: url(../../assets/images/pattern__metal.jpg); }
-  .pub--bgc {
+  .pub__bgc {
     min-height: 296px;
     margin-top: 60px;
     background: #1d1d1d url(../../assets/images/franch__logo.svg) no-repeat center;
@@ -1117,7 +1156,7 @@ span.nav-close:before {
   background-color: #bd9e13; }
   .conditions__card {
     min-height: 678px;
-    background-color: #1b1b1b; }
+    background-color: #1d1d1d; }
     .conditions__card ul {
       text-align: left;
       padding: 16px 40px 0; }
@@ -1148,7 +1187,7 @@ span.nav-close:before {
     Callme Styles
 --------------------------------------------------------------------------*/
 .callme {
-  background-color: #1b1b1b; }
+  background-color: #1d1d1d; }
   .callme--bgc {
     min-height: 720px;
     background: url(../../assets/images/bg--callme.jpg) no-repeat; }
@@ -1186,8 +1225,9 @@ span.nav-close:before {
 .expenses {
   min-height: 718px;
   background-image: url(../../assets/images/bg--wood.jpg);
+  text-align: center;
   position: relative;
-  text-align: center; }
+  z-index: -2; }
   .expenses:after {
     content: '';
     position: absolute;
@@ -1198,3 +1238,188 @@ span.nav-close:before {
     height: 23px;
     background-image: url(../../assets/images/icon__battlements.png);
     background-repeat: repeat-x; }
+  .expenses__step {
+    min-height: 250px;
+    background: #1b1b1b;
+    margin-top: -64px;
+    padding-top: 60px;
+    z-index: -1;
+    position: relative; }
+  .expenses__circle {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-color: #bd9e13;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center; }
+    .expenses__circle img {
+      margin: 0 auto; }
+  .expenses__title {
+    font-family: 'Acrobat Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative; }
+    .expenses__title:after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      margin: 14px auto 10px;
+      height: 1px;
+      background-color: #bd9e13;
+      bottom: -26px;
+      left: 46%; }
+  .expenses__info {
+    font-family: 'Acrobat Light', sans-serif;
+    color: #bd9e13;
+    font-size: 20px; }
+
+/* -----------------------------------------------------------------------
+    Payback Styles
+--------------------------------------------------------------------------*/
+.payback {
+  min-height: 494px;
+  background-color: #1d1d1d;
+  position: relative; }
+  .payback:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    display: inline-block;
+    width: 100%;
+    height: 23px;
+    background-image: url(../../assets/images/icon__battlements.png);
+    background-repeat: repeat-x; }
+  .payback__bgc {
+    margin-top: 64px;
+    min-height: 366px;
+    background-color: #bd9e13;
+    text-align: center; }
+    .payback__bgc span {
+      font-family: "Acrobat Bold", sans-serif;
+      font-size: 32px;
+      color: #fff;
+      display: inline-block;
+      padding-bottom: 50px; }
+  .payback__button {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    padding: 24px 74px;
+    background-color: #1d1d1d;
+    position: relative; }
+    .payback__button:after {
+      content: '';
+      position: absolute;
+      top: 26px;
+      right: 50px;
+      width: 17px;
+      height: 17px;
+      background: url(../../assets/images/icon__down.svg) no-repeat center; }
+
+/* -----------------------------------------------------------------------
+    Advantages  Styles
+--------------------------------------------------------------------------*/
+.advant {
+  min-height: 630px;
+  background-image: url(../../assets/images/bg--advant.jpg);
+  position: relative;
+  text-align: center; }
+  .advant:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -12px;
+    display: inline-block;
+    width: 100%;
+    height: 23px;
+    background-image: url(../../assets/images/icon__battlements.png);
+    background-repeat: repeat-x; }
+  .advant__title {
+    font-family: 'Acrobat Bold', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 14px; }
+    .advant__title:before {
+      content: '';
+      position: absolute;
+      background-image: url(../../assets/images/icon__advant.svg);
+      width: 42px;
+      height: 42px;
+      top: -80px; }
+  .advant__info {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff; }
+
+/* -----------------------------------------------------------------------
+    Investments  Styles
+--------------------------------------------------------------------------*/
+.invest {
+  min-height: 880px;
+  background-image: url(../../assets/images/pattern__metal.jpg);
+  text-align: center; }
+  .invest__num {
+    text-align: left;
+    font-family: 'Acrobat Bold', sans-serif;
+    font-size: 30px;
+    color: #bd9e13;
+    display: block;
+    position: relative; }
+    .invest__num:before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: #bd9e13;
+      bottom: -4px; }
+  .invest__info {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #ccc;
+    min-height: 100px;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    margin-top: 20px;
+    margin-bottom: 40px; }
+
+/* -----------------------------------------------------------------------
+    Questions  Styles
+--------------------------------------------------------------------------*/
+.quest {
+  min-height: 890px;
+  background-color: #eeeedd;
+  text-align: center; }
+  .quest__title {
+    font-family: 'Acrobat Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #bd9e13;
+    letter-spacing: 1.4px;
+    margin-bottom: 0;
+    padding-bottom: 58px; }
+  .quest__form input, .quest__form textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    border: 1px solid #bd9e13;
+    background-color: #eeeedd;
+    color: #999; }
+  .quest__form button {
+    width: 100%; }
