@@ -43,6 +43,12 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
+@media screen and (max-width: 1367px) {
+  .callme {
+    text-align: center; }
+  .gpform {
+    margin: 0 auto; } }
+
 @media screen and (max-width: 1200px) {
   .slider__caption:after {
     background-image: url(../../assets/sprites/sprite.png);
@@ -54,10 +60,21 @@ The `sprites` mixin generates identical output to the CSS template
     background-position: 0px -101px;
     width: 101px;
     height: 101px; }
+  .gptitle--callme {
+    padding-top: 60px; }
+  .gptitle--franch {
+    font-size: 70px; }
   .navbar-default .navbar-nav > li > a {
     padding: 12px 20px; }
   .gpbutton--shares {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .invest__info {
+    min-height: 140px; }
+  .pub__bgc {
+    margin-bottom: 60px;
+    background-image: none; }
+  .advant__title {
+    font-size: 20px; } }
 
 @media screen and (max-width: 1024px) {
   .menu__item {
@@ -93,8 +110,46 @@ The `sprites` mixin generates identical output to the CSS template
       content: none; }
   .gptitle--salad::after {
     content: none; }
+  .gptitle--franch {
+    font-size: 60px;
+    padding-top: 90px;
+    line-height: 1.1; }
+    .gptitle--franch::after {
+      content: none; }
+  .gptitle--condi {
+    font-size: 60px;
+    padding-top: 90px; }
+    .gptitle--condi::after {
+      content: none; }
+  .gptitle--advant {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    line-height: 1.1;
+    font-size: 70px; }
+    .gptitle--advant::after {
+      content: none; }
+  .gptitle--invest {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    line-height: 1.1;
+    font-size: 70px; }
+    .gptitle--invest::after {
+      content: none; }
+  .gptitle--payback {
+    font-size: 70px; }
+  .gptitle--quest {
+    padding-top: 60px; }
+    .gptitle--quest:after {
+      content: none; }
   .shares__title {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .conditions__card ul {
+    padding-bottom: 20px;
+    margin-bottom: 70px; }
+  .advant__title::before {
+    content: none; }
+  .invest__info {
+    min-height: 60px; } }
 
 @media screen and (max-width: 767px) {
   .gptitle {
@@ -121,6 +176,22 @@ The `sprites` mixin generates identical output to the CSS template
       content: none; }
     .gptitle--shares::after {
       content: none; }
+    .gptitle--callme {
+      font-size: 40px; }
+    .gptitle--invest {
+      font-size: 50px; }
+    .gptitle--condi {
+      font-size: 50px;
+      line-height: 1.1; }
+    .gptitle--advant {
+      font-size: 50px;
+      padding-bottom: 20px;
+      padding-top: 40px; }
+    .gptitle--franch {
+      font-size: 50px; }
+    .gptitle--payback {
+      font-size: 50px;
+      line-height: 1.1; }
   .video {
     min-height: 580px; }
     .video__main {
@@ -170,6 +241,8 @@ The `sprites` mixin generates identical output to the CSS template
       float: none; }
     .gpbutton--shares {
       padding: 20px 40px; }
+    .gpbutton--form {
+      width: 100%; }
   span.nav-close:before {
     height: 22px;
     width: 22px;
@@ -205,4 +278,12 @@ The `sprites` mixin generates identical output to the CSS template
       left: 10%;
       width: 80%; }
   .pagination__item {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .gpform {
+    width: 100%; }
+    .gpform input {
+      width: 100%; }
+  .advant__info {
+    padding-bottom: 30px; }
+  .quest {
+    min-height: 720px; } }

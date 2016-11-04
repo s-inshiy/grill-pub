@@ -72,7 +72,8 @@ body {
   outline: 0; }
 
 body {
-  min-width: 320px; }
+  min-width: 320px;
+  /*overflow: hidden;*/ }
 
 ol,
 ul {
@@ -296,7 +297,7 @@ button {
     color: #fff; }
   .gpbutton--form {
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 64px;
     letter-spacing: 2px;
     padding: 26px 92px; }
 
@@ -1093,6 +1094,7 @@ span.nav-close:before {
 --------------------------------------------------------------------------*/
 .franch {
   min-height: 634px;
+  text-align: center;
   background-image: url(../../assets/images/bg--wood.jpg); }
   .franch__step {
     height: 130px;
@@ -1118,6 +1120,7 @@ span.nav-close:before {
   .franch__info {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
+    margin-bottom: 70px;
     color: #fff; }
 
 /* -----------------------------------------------------------------------
@@ -1129,6 +1132,7 @@ span.nav-close:before {
   .pub__bgc {
     min-height: 296px;
     margin-top: 60px;
+    margin-bottom: 60px;
     background: #1d1d1d url(../../assets/images/franch__logo.svg) no-repeat center;
     color: #ccc;
     font-family: "OpenSans Bold", sans-serif;
@@ -1152,6 +1156,7 @@ span.nav-close:before {
     Сonditions Styles
 --------------------------------------------------------------------------*/
 .conditions {
+  text-align: center;
   min-height: 1090px;
   background-color: #bd9e13; }
   .conditions__card {
@@ -1206,10 +1211,10 @@ span.nav-close:before {
     margin-bottom: 40px; }
 
 .gpform {
-  width: 70%; }
+  width: 360px; }
   .gpform input {
     display: block;
-    width: 358px;
+    width: 360px;
     padding: 18px;
     letter-spacing: 1px;
     margin-bottom: 28px;
@@ -1241,6 +1246,7 @@ span.nav-close:before {
   .expenses__step {
     min-height: 250px;
     background: #1b1b1b;
+    margin-bottom: 60px;
     margin-top: -64px;
     padding-top: 60px;
     z-index: -1;
@@ -1389,7 +1395,7 @@ span.nav-close:before {
     text-align: left;
     font-family: 'Open Sans', sans-serif;
     color: #ccc;
-    min-height: 100px;
+    min-height: 110px;
     font-size: 18px;
     letter-spacing: 1.2px;
     margin-top: 20px;

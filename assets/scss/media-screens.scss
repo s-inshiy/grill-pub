@@ -1,4 +1,13 @@
 @import "../sprites/sprite";
+@media screen and (max-width:1367px) {
+  .callme {
+    text-align: center;
+  }
+  .gpform {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width:1200px) {
   .slider {
     &__caption {
@@ -13,17 +22,37 @@
         @include sprite($icon-fork);
       }
     }
+    &--callme {
+      padding-top: 60px;
+    }
+    &--franch {
+      font-size: 70px;
+    }
   }
   .navbar-default .navbar-nav>li>a {
     padding: 12px 20px;
   }
-
-    .gpbutton {
+  .gpbutton {
     &--shares {
       margin-top: 10px;
     }
   }
-
+  .invest {
+    &__info {
+      min-height: 140px;
+    }
+  }
+  .pub {
+    &__bgc {
+      margin-bottom: 60px;
+      background-image: none;
+    }
+  }
+  .advant {
+    &__title {
+      font-size: 20px;
+    }
+  }
 }
 
 @media screen and (max-width:1024px) {
@@ -77,7 +106,7 @@
     width: 80%;
   }
   .gptitle {
-        &--popul {
+    &--popul {
       margin-top: 40px;
       margin-bottom: 50px;
       &::after {
@@ -88,13 +117,75 @@
       &::after {
         content: none;
       }
+    }
+    &--franch {
+      font-size: 60px;
+      padding-top: 90px;
+      line-height: 1.1;
+      &::after {
+        content: none;
+      }
+    }
+    &--condi {
+      font-size: 60px;
+      padding-top: 90px;
+      &::after {
+        content: none;
+      }
+    }
+    &--advant {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      line-height: 1.1;
+      font-size: 70px;
+      &::after {
+        content: none;
+      }
+    }
+    &--invest {
+            padding-top: 60px;
+      padding-bottom: 60px;
+      line-height: 1.1;
+          font-size: 70px;
+      &::after {
+        content: none;
+      }
+    }
+    &--payback {
+      font-size: 70px;
+    }
+    &--quest {
+      padding-top: 60px;
+      &:after {
+        content: none;
+      }
+    }
   }
-}
-.shares {
-  &__title {
-    margin-top: 20px;
+  .shares {
+    &__title {
+      margin-top: 20px;
+    }
   }
-}
+  .conditions {
+    &__card {
+      ul {
+        padding-bottom: 20px;
+        margin-bottom: 70px;
+      }
+    }
+  }
+  .advant {
+    &__title {
+      &::before {
+        content: none;
+      }
+    }
+  }
+  .invest {
+    &__info {
+      min-height: 60px;
+    }
+  }
 }
 
 @media screen and (max-width:767px) {
@@ -132,9 +223,31 @@
       }
     }
     &--shares {
-     &::after {
+      &::after {
         content: none;
       }
+    }
+    &--callme {
+      font-size: 40px;
+    }
+    &--invest {
+      font-size: 50px;
+    }
+    &--condi {
+      font-size: 50px;
+      line-height: 1.1;
+    }
+    &--advant {
+      font-size: 50px;
+      padding-bottom: 20px;
+      padding-top: 40px;
+    }
+    &--franch {
+      font-size: 50px;
+    }
+    &--payback {
+      font-size: 50px;
+      line-height: 1.1;
     }
   }
   .video {
@@ -213,6 +326,9 @@
     &--shares {
       padding: 20px 40px;
     }
+    &--form {
+      width: 100%;
+    }
   }
   span.nav-close:before {
     height: 22px;
@@ -250,11 +366,9 @@
   .delivery {
     height: 400px;
   }
-
   /* -----------------------------------------------------------------------
     Shares Template Styles
 --------------------------------------------------------------------------*/
-  
   .shares {
     padding-top: 60px;
     &__sp {
@@ -264,11 +378,27 @@
       }
     }
   }
-
   .pagination {
-    &__item{
+    &__item {
       font-size: 24px;
     }
+  }
+
+  .gpform {
+    width: 100%;
+    input {
+      width: 100%;
+    }
+  }
+
+  .advant {
+    &__info {
+      padding-bottom: 30px;
+    }
+  }
+
+  .quest {
+    min-height: 720px;
   }
 
 }
