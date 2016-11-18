@@ -396,7 +396,7 @@ button {
 
 .gpnav {
   list-style: none;
-  margin-top: 54px;
+  margin-top: 36px;
   padding-left: 0;
   padding-bottom: 36px;
   border-bottom: 1px solid #7b7b7b;
@@ -874,59 +874,75 @@ button {
     left: -2px;
     height: 18px;
     width: 18px; }
-  .gpicon--mail:before {
-    content: '';
-    position: absolute;
-    background: url(../../assets/images/icon__letter.svg) no-repeat center;
-    top: 4px;
-    left: -2px;
-    height: 18px;
-    width: 18px; }
+  .gpicon--mail {
+    margin-bottom: 36px; }
+    .gpicon--mail:before {
+      content: '';
+      position: absolute;
+      background: url(../../assets/images/icon__letter.svg) no-repeat center;
+      top: 4px;
+      left: -2px;
+      height: 18px;
+      width: 18px; }
   .gpicon--vk {
     display: inline-block;
+    /*padding: 0 10px 0 0;*/
     padding: 0;
-    margin: 0;
-    height: 51px; }
+    margin: 0 16px 0 0;
+    height: 51px;
+    width: 44px; }
     .gpicon--vk:before {
       content: '';
       position: absolute;
       height: 51px;
       background: url(../../assets/images/icon__soc--vk.svg) no-repeat center;
       width: 44px;
-      left: -2px; }
+      /*left: -2px;*/ }
   .gpicon--in {
     display: inline-block;
-    margin: 0;
-    height: 51px; }
+    /*margin: 0;*/
+    margin: 0 16px 0 0;
+    padding: 0;
+    /*padding: 0 10px 0 0;*/
+    height: 51px;
+    width: 44px; }
     .gpicon--in:before {
       content: '';
       position: absolute;
       height: 51px;
       background: url(../../assets/images/icon__soc--in.svg) no-repeat center;
       width: 44px;
-      left: 61px; }
+      /*left: 61px;*/ }
   .gpicon--fb {
     display: inline-block;
-    margin: 0;
-    height: 51px; }
+    /*margin: 0;*/
+    margin: 0 16px 0 0;
+    padding: 0;
+    height: 51px;
+    /*padding: 0 10px 0 0;*/
+    width: 44px; }
     .gpicon--fb:before {
       content: '';
       position: absolute;
       height: 51px;
       background: url(../../assets/images/icon__soc--fb.svg) no-repeat center;
       width: 44px;
-      left: 99px; }
+      /*left: 99px;*/ }
   .gpicon--tw {
     display: inline-block;
-    margin: 0;
-    height: 51px; }
+    /*margin: 0;*/
+    height: 51px;
+    /*padding: 0 10px 0 0;*/
+    padding: 0;
+    width: 44px;
+    margin: 0 16px 0 0; }
     .gpicon--tw:before {
       content: '';
       position: absolute;
       width: 44px;
       height: 51px;
       background: url(../../assets/images/icon__soc--tw.svg) no-repeat center;
-      left: 137px; }
+      /*left: 137px;*/ }
   .gpicon--top {
     display: block;
     font-family: "Open Sans", sans-serif;
@@ -1395,7 +1411,7 @@ span.nav-close:before {
     text-align: left;
     font-family: 'Open Sans', sans-serif;
     color: #ccc;
-    min-height: 110px;
+    min-height: 100px;
     font-size: 18px;
     letter-spacing: 1.2px;
     margin-top: 20px;
